@@ -1,7 +1,9 @@
 import * as React from 'react';
 
+const logo = require('../assets/buildo-logo.png');
+
 export default class LogoRenderer extends React.PureComponent {
-  
+
   render() {
     return (
       <div className='brc-logo' style={{
@@ -10,10 +12,10 @@ export default class LogoRenderer extends React.PureComponent {
         flexDirection: 'column'
       }}>
         <a href='http://buildo.io' target='_blank'>
-          <img src={require('../assets/buildo-logo.png')} width='100px' />
+          <img src={logo} width='100px' />
         </a>
       </div>
     );
   }
-  
+
 }

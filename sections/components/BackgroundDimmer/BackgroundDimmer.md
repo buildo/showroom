@@ -1,8 +1,6 @@
 ### Examples
 
 ```js
-const FlexView = require('react-flexview').default;
-
 const Card = ({ image, title, author, children }) => (
   <FlexView column width={350} className='card'>
     <img src={`/${image}`} />

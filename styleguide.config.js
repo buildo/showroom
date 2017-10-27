@@ -1,32 +1,36 @@
 const path = require('path');
-const kebabCase = require('kebab-case');
+const kebabCase = require('lodash/kebabCase');
 
 function brc(name) {
-  return path.resolve(__dirname, `node_modules/buildo-react-components/src/${name}/${name}.tsx`);
+  return path.resolve(__dirname, `node_modules/buildo-react-components/src/${name}/${name}`);
 }
 
 module.exports = {
   // build
+  serverPort: 8080,
   styleguideDir: 'build', // target of the `build` task
 
-  // style customizations
   require: [
-    path.resolve(__dirname, 'main.scss'),
-    'buildo-normalize-css'
+    // style customizations
+    path.resolve(__dirname, 'styleguide/main.scss'),
+    'buildo-normalize-css',
+    // every component should be available in the examples without an explicit import
+    path.resolve(__dirname, 'styleguide/setup.js')
   ],
   styleguideComponents: {
-    Logo: path.resolve(__dirname, 'components/Logo.jsx')
+    Logo: path.resolve(__dirname, 'styleguide/components/Logo.jsx'),
+    StyleGuide: path.join(__dirname, 'styleguide/components/StyleGuide.jsx')
   },
 
   // content
   title: 'buildo react components',
-  assetsDir: 'assets',
-  template: 'index.html',
+  assetsDir: 'styleguide/assets',
+  template: 'styleguide/index.html',
   propsParser: require('react-docgen-typescript').parse, // detect docs using TS information
   sections: [
     {
       name: 'Getting started',
-      content: 'guides/GettingStarted.md'
+      content: 'sections/GettingStarted.md'
     },
     {
       name: 'Components',
@@ -37,14 +41,11 @@ module.exports = {
         brc('BrowserDetector'),
         brc('CollapsibleSection'),
         brc('ConfirmationInput'),
-        brc('Icon'),
+        brc('Icon')
       ]
-    },
-    {
-      name: 'Guidelines',
-      content: 'guides/UXGuidelines.md'
     }
   ],
+  showCode: true,
   showUsage: true, // show props by default
   getComponentPathLine(componentPath) {
     const name = path.basename(componentPath, '.tsx');
@@ -52,6 +53,6 @@ module.exports = {
   },
   getExampleFilename(componentPath) {
     const name = path.basename(componentPath, '.tsx');
-    return path.resolve(__dirname, `examples/${name}.md`);
+    return path.resolve(__dirname, `sections/components/${name}/${name}.md`);
   }
 };

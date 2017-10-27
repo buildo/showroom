@@ -1,8 +1,6 @@
 ### Examples
 
 ```js
- const FlexView = require('react-flexview').default;
-
 getPlaceholder = (detectedBrowser) =>
   <FlexView vAlignContent='center'>{`"${detectedBrowser.name}" is not supported!`}</FlexView>;
 

@@ -1,0 +1,120 @@
+#app > div {
+  overflow: hidden;
+}
+
+a[title="Open isolated"] {
+  display: none;
+}
+
+section > *:not(section):first-child,
+header > *:first-child {
+  // hacky selector to remove custom element <hnan> containing un unwanted title/link
+  display: none;
+}
+
+h1.component-title {
+  font-size: 27px;
+  font-weight: 600;
+  text-align: left;
+  color: #354052;
+}
+
+.component-tabs.panel.tabbed-panel {
+  margin: 0;
+
+  .panel-content {
+    padding: 0;
+    padding-top: 30px;
+  }
+
+  .panel-header .tabbed-panel-tabs {
+    background: white;
+    border-bottom: 1px solid #ced0da;
+
+    .tabbed-panel-tab {
+      flex: 0 0 auto !important;
+      padding: 0 20px;
+      border-bottom: none;
+
+      &.active {
+        box-shadow: 0px -3px 0px 0px #1a91eb inset;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// MARKDOWN CONTENT
+#app {
+  article {
+    color: #727a86;
+    h1 {
+      font-size: 27px;
+      font-weight: normal;
+      margin-top: 50px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    button[name="rsg-code-editor"] {
+      display: none;
+    }
+  }
+
+  table {
+    margin-top: 34px;
+    border-collapse: collapse;
+    color: #354052;
+    font-size: 16px;
+
+    tr {
+      height: 40px;
+    }
+
+    thead th {
+      padding: 0 5px;
+      border: 1px solid #dfe3e9;
+      background-color: #f0f3f8;
+      color: #7f8fa4;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: left;
+      vertical-align: middle;
+
+      &:nth-child(2) {
+        // min-width: 400px;
+      }
+    }
+
+    tbody td {
+      padding: 0 5px;
+      border: 1px solid #dfe3e9;
+      vertical-align: middle;
+
+      code {
+        // background-color: #7f8fa4;
+      }
+    }
+  }
+}
+
+body {
+  font-size: 14px;
+}
+
+// @import '~buildo-react-components/src/AsyncStatusIndicator/asyncStatusIndicator.scss';
+// @import '~buildo-react-components/src/Badge/badge.scss';
+// @import '~buildo-react-components/src/BackgroundDimmer/examples/backgroundDimmer.scss';
+// @import '~buildo-react-components/src/BrowserDetector/examples/browserDetector.scss';
+// @import '~buildo-react-components/src/CollapsibleSection/collapsibleSection.scss';
+// @import '~buildo-react-components/src/CollapsibleSection/examples/collapsibleSection.scss';
+// @import '~buildo-react-components/src/ConfirmationInput/confirmationInput.scss';
+// @import '~buildo-react-components/src/Panel/panel.scss';
+// @import '~buildo-react-components/src/Panel/tabbedPanel.scss';
+@import '~react-flexview/lib/flexView.css';

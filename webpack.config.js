@@ -10,7 +10,8 @@ module.exports = {
         test: /\.[jt]sx?$/,
         include: [
           path.resolve(__dirname, 'node_modules/buildo-react-components/src'),
-          path.resolve(__dirname, 'components')
+          path.resolve(__dirname, 'components'),
+          path.resolve(__dirname, 'styleguide')
         ],
         use: [
           {

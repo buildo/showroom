@@ -1,8 +1,6 @@
 ### Examples
 
 ```js
-const FlexView = require('react-flexview').default;
-
 const SectionList = ({ items }) => (
   <FlexView className='section' column>
     {Object.keys(items).map(k => (
