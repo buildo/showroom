@@ -1,0 +1,28 @@
+{
+  "name": "react-showroom",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "styleguidist server",
+    "build": "styleguidist build"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.2",
+    "babel-preset-buildo": "^0.1.1",
+    "buildo-normalize-css": "^3.0.2",
+    "buildo-react-components": "buildo/react-components",
+    "css-loader": "^0.28.5",
+    "kebab-case": "^1.0.0",
+    "node-sass": "^4.5.3",
+    "react": "^15.6.1",
+    "react-docgen-typescript": "^1.0.0",
+    "react-dom": "^15.6.1",
+    "react-styleguidist": "^6.0.16",
+    "sass-loader": "^6.0.6",
+    "ts-loader": "^2.3.3",
+    "typescript": "^2.4.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.5.5"
+  }
+}

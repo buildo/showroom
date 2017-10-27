@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "allowSyntheticDefaultImports": false,
+    "experimentalDecorators": true,
+    "outDir": "./temp",
+    "baseUrl": ".",
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "sourceMap": false,
+    "alwaysStrict": true,
+    "jsx": "react"
+  },
+  "include": [
+    "typings",
+    "node_modules"
+  ]
+}
