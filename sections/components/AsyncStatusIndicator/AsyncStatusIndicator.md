@@ -1,6 +1,10 @@
 ### Examples
 
+#### A typical usage
+
 ```js
+initialState = { state: 'ready' };
+
 const labels = {
   success: 'Success',
   error: 'Error',
@@ -9,14 +13,45 @@ const labels = {
 };
 
 const icons = {
-  success: <div />,
-  error: <div />,
-  processing: <div />
+  success: <Icon icon='check2' />,
+  error: <Icon icon='x' />,
+  processing: <LoadingSpinner size='1em' overlayColor='transparent' />
 };
 
-<AsyncStatusIndicator state='ready' labels={labels} icons={icons} />
+onClick = () => {
+  if (this.timeout) {
+    return;
+  }
+  setState({ state: 'processing'});
+  this.timeout = setTimeout(() => {
+    setState({ state: Math.random() > .5 ? 'success' : 'error'});
+    this.timeout = setTimeout(() => {
+      setState({ state: 'ready' });
+      clearTimeout(this.timeout);
+      this.timeout = null;
+    }, 1987);
+  }, 1987);
+};
+
+<FlexView>
+
+  <FlexView marginRight={30}>
+    <Button buttonState='ready' onClick={onClick}>click!</Button>
+  </FlexView>
+
+  <FlexView>
+    <AsyncStatusIndicator
+      state={state.state}
+      icons={icons}
+      labels={labels}
+    />
+  </FlexView>
+
+</FlexView>
 ```
 
+#### All the states
+
 ```js
 const labels = {
   success: 'Success',
@@ -26,15 +61,44 @@ const labels = {
 };
 
 const icons = {
-  success: <div />,
-  error: <div />,
-  processing: <div />
+  success: <Icon icon='check2' />,
+  error: <Icon icon='x' />,
+  processing: <LoadingSpinner size='1em' overlayColor='transparent' />
 };
 
-<div>
-  <AsyncStatusIndicator state='ready' icons={icons} labels={labels} />
-  <AsyncStatusIndicator state='processing' icons={icons} labels={labels} />
-  <AsyncStatusIndicator state='success' icons={icons} labels={labels} />
-  <AsyncStatusIndicator state='error' icons={icons} labels={labels} />
-</div>
+<FlexView column>
+
+  <FlexView height={50}>
+    <AsyncStatusIndicator
+      state='ready'
+      icons={icons}
+      labels={labels}
+    />
+  </FlexView>
+
+  <FlexView height={50}>
+    <AsyncStatusIndicator
+      state='processing'
+      icons={icons}
+      labels={labels}
+    />
+  </FlexView>
+
+  <FlexView height={50}>
+    <AsyncStatusIndicator
+      state='success'
+      icons={icons}
+      labels={labels}
+    />
+  </FlexView>
+
+  <FlexView height={50}>
+    <AsyncStatusIndicator
+      state='error'
+      icons={icons}
+      labels={labels}
+    />
+  </FlexView>
+
+</FlexView>
 ```

@@ -59,13 +59,13 @@ export default class StyleGuide extends Component {
 
 	patchGlobal() {
 		// TODO: find a better way to make examples work without an "export default" in the component file
-		global.AsyncStatusIndicator = require('buildo-react-components/lib/AsyncStatusIndicator/AsyncStatusIndicator').AsyncStatusIndicator;
-		global.BackgroundDimmer = require('buildo-react-components/lib/BackgroundDimmer/BackgroundDimmer').BackgroundDimmer;
-		global.Badge = require('buildo-react-components/lib/Badge/Badge').Badge;
-		global.BrowserDetector = require('buildo-react-components/lib/BrowserDetector/BrowserDetector').BrowserDetector;
-		global.CollapsibleSection = require('buildo-react-components/lib/CollapsibleSection/CollapsibleSection').CollapsibleSection;
-		global.ConfirmationInput = require('buildo-react-components/lib/ConfirmationInput/ConfirmationInput').ConfirmationInput;
-		global.Icon = require('buildo-react-components/lib/Icon/Icon').Icon;
+		const brc = require('buildo-react-components/lib');
+		Object.keys(brc).forEach(k => {
+			if (k !== '__es6Module') {
+				global[k] = brc[k];
+			}
+		});
+		global.getBackgroundUrl = require('buildo-react-components/lib/Image').getBackgroundUrl;
 	}
 
 	findSection(sections, slug, hack) {
