@@ -14,7 +14,7 @@ const brcComponents = fs.readdirSync(path.resolve(__dirname, 'node_modules/build
 module.exports = {
   // build
   serverPort: 8080,
-  styleguideDir: 'build', // target of the `build` task
+  styleguideDir: 'docs', // target of the `build` task
 
   require: [
     // "global" setup + sass imports
