@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "styleguidist server",
-    "build": "styleguidist build"
+    "build": "styleguidist build",
+    "deploy": "npm run build && git add docs && git commit -m 'update gh-pages' && git push"
   },
   "devDependencies": {
     "babel-loader": "^7.1.2",
