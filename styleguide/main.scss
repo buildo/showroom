@@ -60,6 +60,16 @@ h1.component-title {
   }
 }
 
+// GETTING STARTED
+.pattern-getting-started {
+  position: absolute;
+  top: 0;
+  left: 240px;
+  height: 104px;
+  width: calc(100% - 240px);
+  background-image: url(/pattern.png);
+}
+
 // SIDEBAR
 #app div[class^="rsg--sidebar"] {
   width: 240px;
@@ -98,6 +108,11 @@ h1.component-title {
 
 // MARKDOWN CONTENT
 #app {
+  main {
+    margin: 0;
+    padding: 40px 60px;
+  }
+
   article[class^="rsg"] {
     color: #727a86;
 

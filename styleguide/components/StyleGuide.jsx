@@ -127,7 +127,14 @@ export default class StyleGuide extends Component {
 			);
 		}
 
-		return <Sections sections={[section]} root depth={0} />;
+		return (
+      <div>
+        <div style={{ height: 104 }}>
+          <div className='pattern-getting-started' />
+        </div>
+        <Sections sections={[section]} root depth={0} />
+      </div>
+    );
 	}
 
 	onSetActiveTab = (activeTabIndex) => {
