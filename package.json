@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "buildo-react-components": "buildo/react-components",
+    "faker": "^4.1.0",
     "lodash": "^4.17.4",
     "query-string": "^5.0.1",
     "react-flexview": "^1.0.13"

@@ -1,7 +1,6 @@
 ### Examples
 
 ```js
-const reject = require('lodash/reject');
 const toastStyles = [
   {
     message: 'Saturday',

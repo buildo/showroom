@@ -7,7 +7,7 @@ function brc(name) {
 }
 
 const brcComponents = fs.readdirSync(path.resolve(__dirname, 'node_modules/buildo-react-components/src'))
-  .filter(c => ['index.ts', 'utils', 'KitchenSink', 'InputChildren', 'Scroll', 'Tablo'].indexOf(c) === -1)
+  .filter(c => ['index.ts', 'utils', 'KitchenSink', 'InputChildren', 'Scroll', 'TransitionWrapper'].indexOf(c) === -1)
   .map(brc);
 
 module.exports = {

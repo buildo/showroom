@@ -1,4 +1,29 @@
-global.FlexView = require('react-flexview').default;
+import * as faker from 'faker';
+import FlexView from 'react-flexview';
+import * as find from 'lodash/find';
+import * as reject from 'lodash/reject';
+import * as partial from 'lodash/partial';
+import * as sortBy from 'lodash/sortBy';
+
+const getRandomRow = () => {
+  return {
+    avatar: faker.image.avatar(),
+    name: faker.name.findName(),
+    city: faker.address.city(),
+    email: faker.internet.email(),
+    company: faker.company.companyName()
+  };
+};
+
+const tabloData = Array.apply(null, Array(1000)).reduce(acc => [...acc, getRandomRow()], []);
+
+// available in examples
+global.FlexView = FlexView;
+global.tabloData = tabloData;
+global.find = find;
+global.partial = partial;
+global.reject = reject;
+global.sortBy = sortBy;
 
 // require.context('buildo-react-components/src', true, /\.scss$/);
 import 'buildo-react-components/src/Button/button.scss';
