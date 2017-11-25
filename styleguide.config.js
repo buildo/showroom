@@ -1,5 +1,6 @@
 const path = require('path');
 const kebabCase = require('lodash/kebabCase');
+const endsWith = require('lodash/endsWith');
 const fs = require('fs');
 
 function brc(name) {
@@ -25,7 +26,7 @@ module.exports = {
   },
 
   // content
-  title: 'buildo react components',
+  title: '@buildo/react-components',
   assetsDir: 'styleguide/assets',
   template: 'styleguide/index.html',
   propsParser: require('react-docgen-typescript').parse, // detect docs using TS information
@@ -46,7 +47,7 @@ module.exports = {
     return `import ${name} from @buildo/react-${kebabCase(name)}`;
   },
   getExampleFilename(componentPath) {
-    const name = path.basename(componentPath, '.tsx');
+    const name = endsWith(componentPath, '.tsx') ? path.basename(componentPath, '.tsx') : path.basename(componentPath, '.ts');
     return path.resolve(__dirname, `sections/components/${name}/${name}.md`);
   }
 };
