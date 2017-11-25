@@ -59,13 +59,13 @@ export default class StyleGuide extends Component {
 
 	patchGlobal() {
 		// TODO: find a better way to make examples work without an "export default" in the component file
-		const brc = require('buildo-react-components/lib');
+		const brc = require('buildo-react-components/src');
 		Object.keys(brc).forEach(k => {
 			if (k !== '__es6Module') {
 				global[k] = brc[k];
 			}
 		});
-		global.getBackgroundUrl = require('buildo-react-components/lib/Image').getBackgroundUrl;
+		global.getBackgroundUrl = require('buildo-react-components/src/Image').getBackgroundUrl;
 	}
 
 	findSection(sections, slug, hack) {
@@ -106,13 +106,13 @@ export default class StyleGuide extends Component {
 				name: component.name,
 				slug: component.slug,
 				content: [{
-					content: require(`raw-loader!../../sections/components/${component.name}/${component.name}UX.md`),
+					content: 'TODO' || require(`raw-loader!../../sections/components/${component.name}/${component.name}UX.md`),
 					type: 'markdown'
 				}]
 			};
 
 			const children = activeTabIndex === 0 ?
-				<Sections sections={[UXGuidelines]} root /> :
+				<Sections sections={[UXGuidelines]} root depth={0} /> :
 				<ReactComponent component={component} root />;
 
 			return (
@@ -125,7 +125,7 @@ export default class StyleGuide extends Component {
 			);
 		}
 
-		return <Sections sections={[section]} root />;
+		return <Sections sections={[section]} root depth={0} />;
 	}
 
 	onSetActiveTab = (activeTabIndex) => {

@@ -42,7 +42,7 @@ const meterProps = {
   baseFillingColor: '#CCCCCC',
   baseBackgroundColor: '#FAFAFA',
   style: { marginBottom: 20 }
-}
+};
 
 <FlexView column>
   <Meter

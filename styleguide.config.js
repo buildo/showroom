@@ -6,7 +6,7 @@ function brc(name) {
   return path.resolve(__dirname, `node_modules/buildo-react-components/src/${name}/${name}`);
 }
 
-const brcComponents = fs.readdirSync('./node_modules/buildo-react-components/src')
+const brcComponents = fs.readdirSync(path.resolve(__dirname, 'node_modules/buildo-react-components/src'))
   .filter(c => ['index.ts', 'utils', 'KitchenSink', 'InputChildren', 'Scroll', 'Tablo'].indexOf(c) === -1)
   .map(brc);
 

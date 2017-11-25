@@ -1,5 +1,4 @@
 global.FlexView = require('react-flexview').default;
-global.Button = require('buildo-react-components/lib/Button').default;
 
 // require.context('buildo-react-components/src', true, /\.scss$/);
 import 'buildo-react-components/src/Button/button.scss';
