@@ -1,7 +1,7 @@
 ### Examples
 
 ```js
-left = () => (
+const left = () => (
   <FlexView className='left'>
     <a className='item active'>Home</a>
     <a className='item'>Discover</a>
@@ -9,7 +9,7 @@ left = () => (
   </FlexView>
 );
 
-right = () => <Button primary size='small' icon='plus' label='New Project' onClick={() => {}} />;
+const right = () => <Button primary size='small' icon='plus' label='New Project' onClick={() => {}} />;
 
 const props = {
   content: {

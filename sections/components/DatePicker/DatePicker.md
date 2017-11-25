@@ -2,11 +2,11 @@
 
 #### A typical usage
 ```js
-initialState = {};
+initialState = {}
 
-onChange = value => {
-  setState({ value });
-};
+function onChange(value) {
+  setState({ value })
+}
 
 <FlexView column grow>
   {!!state.value && state.value.toString()}

@@ -2,16 +2,16 @@
 
 #### A typical usage
 ```js
-initialState = { value: undefined };
+initialState = { value: undefined }
 
-onChange = (value) => {
-  setState({ value });
-};
+function onChange(value) {
+  setState({ value })
+}
 
 <FlexView column>
   <DateField
     value={state.value}
-    onChange={this.onChange}
+    onChange={onChange}
     inputTypeNumber
   />
 </FlexView>
@@ -22,19 +22,21 @@ onChange = (value) => {
 initialState = {
   value: new Date(),
   isValid: true
-};
+}
 
-onChange = (value) => {
-  this.setState({ value });
-};
+function onChange(value) {
+  setState({ value })
+}
 
-onValidChange = isValid => this.setState({ isValid });
+function onValidChange(isValid) {
+  setState({ isValid })
+}
 
 <FlexView column>
   <DateField
     value={state.value}
-    onChange={this.onChange}
-    onValidChange={this.onValidChange} inputTypeNumber
+    onChange={onChange}
+    onValidChange={onValidChange} inputTypeNumber
   />
   {`isValid: ${state.isValid}`}
 </FlexView>

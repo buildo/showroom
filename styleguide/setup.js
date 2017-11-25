@@ -1,3 +1,4 @@
+import * as ReactDOM from 'react-dom';
 import FlexView from 'react-flexview';
 import * as faker from 'faker';
 import * as find from 'lodash/find';
@@ -23,6 +24,7 @@ const getRandomRow = () => {
 const tabloData = Array.apply(null, Array(1000)).reduce(acc => [...acc, getRandomRow()], []);
 
 // available in examples
+global.ReactDOM = ReactDOM;
 global.FlexView = FlexView;
 global.tabloData = tabloData;
 global.find = find;

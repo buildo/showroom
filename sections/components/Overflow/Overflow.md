@@ -3,7 +3,7 @@
 `Overflow` will automatically render the node passed through `contentIfOverflowing` whenever the original `content` overflows its parent.
 
 ```js
-getContent = (isOverflowing) => (
+const getContent = (isOverflowing) => (
   <FlexView
     width={200}
     vAlignContent='center'

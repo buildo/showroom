@@ -1,7 +1,7 @@
 ### Examples
 
 ```js
-getContent = (focused) => (
+const getContent = (focused) => (
   <FlexView
     grow
     height={50}

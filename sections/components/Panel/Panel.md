@@ -90,6 +90,8 @@ const panelHeader = {
 A docked panel can be collapsed so that only the header is visible. It could be collapsed vertically:
 
 ```js
+intialState = { isCollapsed: false };
+
 const Card = ({ title, author, date, image, children }) => (
   <FlexView className='card'>
     <FlexView shrink basis='100%' className='description'>
@@ -108,11 +110,13 @@ const Card = ({ title, author, date, image, children }) => (
   </FlexView>
 );
 
-intialState = { isCollapsed: false };
+function onExpand() {
+  setState({ isCollapsed: false })
+}
 
-onExpand = () => setState({ isCollapsed: false });
-
-onCollapse = () => setState({ isCollapsed: true });
+function onCollapse() {
+  setState({ isCollapsed: true })
+}
 
 const { isCollapsed } = state;
 const panelProps = {
@@ -153,9 +157,13 @@ or horizontally:
 ```js
 intialState = { isCollapsed: false };
 
-onExpand = () => setState({ isCollapsed: false });
+function onExpand() {
+  setState({ isCollapsed: false })
+}
 
-onCollapse = () => setState({ isCollapsed: true });
+function onCollapse() {
+  setState({ isCollapsed: true })
+}
 
 const { isCollapsed } = state;
 const panelProps = {
@@ -185,7 +193,9 @@ A tabbed panel will show content based on the currently selected tab.
 ```js
 initialState = { activeTabIndex: 0 };
 
-onSetActiveTab = (activeTabIndex) => setState({ activeTabIndex })
+function onSetActiveTab(activeTabIndex) {
+  setState({ activeTabIndex })
+}
 
 const { activeTabIndex } = state;
 const panelProps = {

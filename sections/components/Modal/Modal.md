@@ -3,11 +3,15 @@
 ```js
 intialState = { isOpen: false };
 
-open = () => setState({ isOpen: true });
+function open() {
+  setState({ isOpen: true })
+}
 
-close = () => setState({ isOpen: false });
+function close() {
+  setState({ isOpen: false })
+}
 
-getModal = () => (
+const getModal = () => (
   <Modal
     transitionEnterTimeout={500}
     transitionLeaveTimeout={500}
@@ -37,11 +41,15 @@ getModal = () => (
 ```js
 intialState = { isOpen: false };
 
-open = () => setState({ isOpen: true });
+function open() {
+  setState({ isOpen: true })
+}
 
-close = () => setState({ isOpen: false });
+function close() {
+  setState({ isOpen: false })
+}
 
-getModal = () => (
+const getModal = () => (
   <Modal
     transitionEnterTimeout={500}
     transitionLeaveTimeout={500}
@@ -69,11 +77,15 @@ getModal = () => (
 ```js
 intialState = { isOpen: false };
 
-open = () => setState({ isOpen: true });
+function open() {
+  setState({ isOpen: true })
+}
 
-close = () => setState({ isOpen: false });
+function close() {
+  setState({ isOpen: false })
+}
 
-getModal = () => (
+const getModal = () => (
   <Modal
     transitionEnterTimeout={500}
     transitionLeaveTimeout={500}

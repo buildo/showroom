@@ -52,13 +52,23 @@ const options = [
   }
 ];
 
-onChange = (value) => setState({ value });
+function onChange(value) {
+  setState({ value })
+}
 
-formatter = ({ label }) => (
+const formatter = ({ label }) => (
   <FlexView height='100%' vAlignContent='center'>
     <TextOverflow label={label}>
       {(self, isOpen) => (
-        <Tooltip popover={{ position: 'top', content: label, isOpen, attachToBody: true }} style={{ width: '100%' }}>
+        <Tooltip
+          popover={{
+            position: 'top',
+            content: label,
+            isOpen,
+            attachToBody: true
+          }}
+          style={{ width: '100%' }}
+        >
           {self}
         </Tooltip>
       )}
@@ -66,20 +76,17 @@ formatter = ({ label }) => (
   </FlexView>
 );
 
-const { value } = state;
-
 const dropdownProps = {
   searchable: true,
   options,
   onChange,
   optionRenderer: formatter,
   valueRenderer: formatter,
-  value,
+  value: state.value,
   style: { width: '100%' }
 };
 
 <FlexView style={{ maxWidth: 50 }}>
   <Dropdown {...dropdownProps} />
 </FlexView>
-
 ```

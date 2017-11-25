@@ -1,6 +1,8 @@
 ### Examples
 
 ```js
+initialState = { opened: false };
+
 const Card = ({ image, title, author, children }) => (
   <FlexView column width={350} className='card'>
     <img src={`/${image}`} />
@@ -19,13 +21,16 @@ const Card = ({ image, title, author, children }) => (
   </FlexView>
 );
 
-initialState = { opened: false };
+function show() {
+  setState({ opened: true })
+}
 
-show = () => setState({ opened: true });
+function hide() {
+  setState({ opened: false })
+}
 
-hide = () => setState({ opened: false });
 
-state.opened ? (
+if (state.opened) {
   <BackgroundDimmer stopScrollPropagation onClickOutside={hide} color='black' alpha={0.85}>
     <Card image='cover.png' title='Utopia' author='Dennis Kelly'>
       After a group of people, who meet online, discover a bizarre graphic novel
@@ -33,5 +38,7 @@ state.opened ? (
       down by a merciless organization known merely as 'The Network'.
     </Card>
   </BackgroundDimmer>
-) : <button onClick={show}>Show content</button>;
+} else {
+  <button onClick={show}>Show content</button>
+}
 ```

@@ -1,11 +1,13 @@
 ### Examples
 
 ```js
-initialState = { expanded: false };
+initialState = { expanded: false }
 
-onExpandedChange = () => setState({ expanded: !state.expanded });
+function onExpandedChange() {
+  setState({ expanded: !state.expanded })
+}
 
-templateExpanded = () => (
+const templateExpanded = () => (
   <FlexView className='card'>
     <FlexView grow shrink className='description'>
       <FlexView column>
@@ -28,7 +30,7 @@ templateExpanded = () => (
   </FlexView>
 );
 
-templateCollapsed = () => (
+const templateCollapsed = () => (
   <FlexView className='card' style={{ maxHeight: 116 }}>
     <FlexView className='description'>
       <FlexView column>

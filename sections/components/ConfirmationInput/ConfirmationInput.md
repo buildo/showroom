@@ -2,11 +2,12 @@
 
 ```js
 initialState = {};
+
 const onConfirm = value => console.log(`confirmed: ${value}`);
 const onClear = () => console.log('cleared!');
 const onChange = value => setState({ value });
 
-const initialValue = state.value;
+const { initialValue } = state;
 
 <form className='ui form'>
   <ConfirmationInput

@@ -1,6 +1,8 @@
 ### Examples
 
 ```js
+initialState = { openedSections: ['General Info'] };
+
 const SectionList = ({ items }) => (
   <FlexView className='section' column>
     {Object.keys(items).map(k => (
@@ -30,8 +32,6 @@ const sections = {
     Flexibility: 'Average'
   }
 };
-
-initialState = { openedSections: ['General Info'] };
 
 const isSectionOpen = (section) => state.openedSections.indexOf(section) >= 0;
 

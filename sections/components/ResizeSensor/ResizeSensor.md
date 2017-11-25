@@ -3,13 +3,16 @@
 ```js
 class Component extends React.Component {
 
-  state = { width: '' };
+  constructor() {
+    this.state = { width: '' };
+    this.onResize = this.onResize.bind(this);
+  }
 
   componentDidMount() {
     this.onResize();
   }
 
-  onResize = () => {
+  onResize() {
     this.setState({ width: ReactDOM.findDOMNode(this).clientWidth });
   }
 

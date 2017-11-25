@@ -1,11 +1,9 @@
 ### Examples
 
 ```js
-initialState = {};
+initialState = {}
 
-onChange = (value) => setState({ value });
-
-const { value } = state;
+const onChange = (value) => setState({ value });
 
 const options = [
   { value: 'apple', label: 'Apple' },
@@ -16,7 +14,7 @@ const options = [
 ];
 
 <Dropdown
-  value={value}
+  value={state.value}
   onChange={onChange}
   placeholder='Select some fruit'
   options={options}
@@ -27,9 +25,9 @@ const options = [
 #### Dropdowns sizes
 Dropdown comes in two different sizes: medium and small
 ```js
-intialState = {};
+initialState = {}
 
-onChange = (stateVar) => (value) => setState({ [stateVar]: value });
+const onChange = (stateVar) => (value) => setState({ [stateVar]: value });
 
 const { value, value2 } = state;
 
@@ -50,7 +48,7 @@ const options2 = [
 
 <FlexView vAlignContent='center' className='dropdown-list'>
   <Dropdown
-    value={value}
+    value={state.value}
     onChange={onChange('value')}
     placeholder='Select some fruit'
     options={options}
@@ -71,9 +69,7 @@ When needed (e.g. when there isn't enough space under the dropdown to render the
 ```js
 intialState = {};
 
-onChange = (value) => setState({ value });
-
-const { value } = state;
+const onChange = (value) => setState({ value });
 
 const options = [
   { value: 'apple', label: 'Apple' },
@@ -84,7 +80,7 @@ const options = [
 ];
 
 <Dropdown
-  value={value}
+  value={state.value}
   onChange={onChange}
   placeholder='Select some fruit'
   options={options}
@@ -98,9 +94,7 @@ const options = [
 ```js
 intialState = {};
 
-onChange = (value) => setState({ value });
-
-const { value } = state;
+const onChange = (value) => setState({ value });
 
 const options = [
   { value: 'apple', label: 'Apple' },
@@ -117,7 +111,7 @@ const options = [
 
 <Dropdown
   className='custom'
-  value={value}
+  value={state.value}
   onChange={onChange}
   searchable
   clearable
@@ -133,9 +127,7 @@ Dropdown could also allow the selection of multiple values
 ```js
 intialState = {};
 
-onChange = (value) => setState({ value });
-
-const { value } = state;
+const onChange = (value) => setState({ value });
 
 const options = [
   { value: 'apple', label: 'Apple' },
@@ -147,7 +139,7 @@ const options = [
 
 <Dropdown
   className='custom'
-  value={value}
+  value={state.value}
   onChange={onChange}
   multi
   clearable
@@ -160,11 +152,9 @@ const options = [
 #### Groups
 Dropdown could also allow the grouping
 ```js
-initialState = {};
+initialState = {}
 
-onChange = (value) => setState({ value });
-
-const { value } = state;
+const onChange = (value) => setState({ value });
 
 const options = [
   { value: 'cucumber', label: 'Cucumber', category: 'Vegetable'},
@@ -182,7 +172,7 @@ const options = [
 
 <Dropdown
   className='custom'
-  value={value}
+  value={state.value}
   onChange={onChange}
   searchable
   clearable

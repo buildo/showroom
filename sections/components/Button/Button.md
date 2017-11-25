@@ -1,7 +1,7 @@
 ### Examples
 
 ```js
-onClick = () => new Promise((resolve, reject) => {
+const onClick = () => new Promise((resolve, reject) => {
   const headsOrTails = () => Math.random() > .5;
   const resolveOrReject = () => {
     const _headsOrTails = headsOrTails();
@@ -10,7 +10,7 @@ onClick = () => new Promise((resolve, reject) => {
   setTimeout(resolveOrReject, 500);
 });
 
-icons = {
+const icons = {
   success: 'check',
   error: 'error'
 };
@@ -27,7 +27,9 @@ icons = {
 #### Async buttons
 This variant can be applied to default, primary, positive and flat buttons.
 ```js
-onClick = () => alert('clicked!')
+function onClick() {
+  alert('clicked!')
+}
 
 const buttonProps = {
   onClick,
@@ -48,7 +50,9 @@ const buttonProps = {
 #### Fluid button
 Block buttons typically occupy all the horizontal space available in its container. There should be only 1 button on the same line, if more than one block button is present they are stacked vertically.
 ```js
-onClick = () => alert('clicked!');
+function onClick() {
+  alert('clicked!')
+}
 
 <Button
   fluid
@@ -60,9 +64,11 @@ onClick = () => alert('clicked!');
 #### Button Sizes
 There are 3 possible button sizes:
 ```js
-onClick = () => alert('clicked!');
+function onClick() {
+  alert('clicked!')
+}
 
-buttonProps = {
+const buttonProps = {
   onClick,
   style: { margin: 10, width: 150 }
 };
@@ -77,9 +83,11 @@ buttonProps = {
 #### Type of buttons
 A button can be formatted to show different levels of emphasis. We have 6 types of buttons:
 ```js
-onClick = () => alert('clicked!');
+function onClick() {
+  alert('clicked!')
+}
 
-buttonProps = {
+const buttonProps = {
   onClick,
   style: { margin: 10, width: 150 }
 };

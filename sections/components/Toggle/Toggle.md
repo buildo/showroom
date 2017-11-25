@@ -1,11 +1,11 @@
 ### Examples
 
 ```js
-intialState = { checked: false };
+intialState = { checked: false }
 
-onChange = (checked) => {
-  setState({ checked });
-};
+function onChange(checked) {
+  setState({ checked })
+}
 
 <Toggle value={state.checked} onChange={onChange} size='4em' />
 ```

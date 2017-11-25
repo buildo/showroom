@@ -64,16 +64,15 @@ const meterProps = {
 By default, Meter display an auto-calculated percentage next to the bar. You can customize your own label formatter in order to show whathever you like:
 
 ```js
-
-labelFormatter1 = (curr, min, max) => {
+function labelFormatter1(curr, min, max) {
   return +(Math.round(curr + 'e+2')  + 'e-2');
 };
 
-labelFormatter2 = (curr, min, max) => {
+function labelFormatter2(curr, min, max) {
   return `${curr}/${max}`;
 }
 
-labelFormatter3 = (curr, min, max) => {
+function labelFormatter3(curr, min, max) {
   return curr > (max - min) / 2 ? 'good' : 'bad';
 }
 

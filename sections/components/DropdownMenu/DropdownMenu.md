@@ -3,9 +3,13 @@
 ```js
 intialState = { isOpen: false };
 
-toggleOpen = () => setState({ isOpen: !state.isOpen });
+function toggleOpen() {
+  setState({ isOpen: !state.isOpen })
+}
 
-onClick = (option) => alert(`${option.title} clicked`);
+function onClick(option) {
+  alert(`${option.title} clicked`)
+}
 
 const { isOpen } = state;
 

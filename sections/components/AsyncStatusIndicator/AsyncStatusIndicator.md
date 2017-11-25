@@ -3,35 +3,35 @@
 #### A typical usage
 
 ```js
-initialState = { state: 'ready' };
+initialState = { state: 'ready' }
 
 const labels = {
   success: 'Success',
   error: 'Error',
   ready: 'Ready',
   processing: 'Processing'
-};
+}
 
 const icons = {
   success: <Icon icon='check2' />,
   error: <Icon icon='x' />,
   processing: <LoadingSpinner size='1em' overlayColor='transparent' />
-};
+}
 
-onClick = () => {
-  if (this.timeout) {
-    return;
-  }
-  setState({ state: 'processing'});
-  this.timeout = setTimeout(() => {
-    setState({ state: Math.random() > .5 ? 'success' : 'error'});
+function onClick() {
+  if (!this.timeout) {
+    setState({ state: 'processing'});
+
     this.timeout = setTimeout(() => {
-      setState({ state: 'ready' });
-      clearTimeout(this.timeout);
-      this.timeout = null;
+      setState({ state: Math.random() > .5 ? 'success' : 'error'});
+      this.timeout = setTimeout(() => {
+        setState({ state: 'ready' });
+        clearTimeout(this.timeout);
+        this.timeout = null;
+      }, 1987);
     }, 1987);
-  }, 1987);
-};
+  }
+}
 
 <FlexView>
 

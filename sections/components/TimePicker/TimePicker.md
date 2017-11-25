@@ -3,9 +3,11 @@
 #### 12h time format
 
 ```js
-initialState = {};
+initialState = {}
 
-onChange = (value) => setState({ value });
+function onChange(value) {
+  setState({ value })
+}
 
 <TimePicker
   value={state.value}
@@ -17,12 +19,14 @@ onChange = (value) => setState({ value });
 #### 24h time format (bounded range)
 
 ```js
-initialState = { value: { hours: 11, minutes: 23 } };
+initialState = { value: { hours: 11, minutes: 23 } }
 
-onChange = (value) => setState({ value });
+const minTime = { hours: 8, minutes: 30 }
+const maxTime = { hours: 18, minutes: 30 }
 
-const minTime = { hours: 8, minutes: 30 };
-const maxTime = { hours: 18, minutes: 30 };
+function onChange(value) {
+  setState({ value })
+}
 
 <TimePicker
   value={state.value}
