@@ -1,9 +1,12 @@
-import * as faker from 'faker';
 import FlexView from 'react-flexview';
+import * as faker from 'faker';
 import * as find from 'lodash/find';
 import * as reject from 'lodash/reject';
 import * as partial from 'lodash/partial';
 import * as sortBy from 'lodash/sortBy';
+
+import 'buildo-normalize-css';
+import 'react-flexview/src/flexView.scss';
 
 const getRandomRow = () => {
   return {
@@ -52,41 +55,41 @@ import 'buildo-react-components/src/DateField/dateField.scss';
 
 
 // examples sass and resources
-import 'buildo-react-components/src/Modal/examples/transition.scss';
+import '../sections/components/Modal/transition.scss';
 
-import 'buildo-react-components/src/MoreOrLess/examples/default.scss';
-import 'buildo-react-components/src/MoreOrLess/examples/image.png';
-import 'buildo-react-components/src/MoreOrLess/examples/image2.png';
+import '../sections/components/MoreOrLess/default.scss';
+import '../sections/components/MoreOrLess/image.png';
+import '../sections/components/MoreOrLess/image2.png';
 
-import 'buildo-react-components/src/Panel/examples/default.scss';
-import 'buildo-react-components/src/Panel/examples/image1.png';
-import 'buildo-react-components/src/Panel/examples/image2.png';
-import 'buildo-react-components/src/Panel/examples/image3.png';
-import 'buildo-react-components/src/Panel/examples/image4.png';
+import '../sections/components/Panel/default.scss';
+import '../sections/components/Panel/image1.png';
+import '../sections/components/Panel/image2.png';
+import '../sections/components/Panel/image3.png';
+import '../sections/components/Panel/image4.png';
 
-import 'buildo-react-components/src/CollapsibleSection/examples/collapsibleSection.scss';
+import '../sections/components/CollapsibleSection/collapsibleSection.scss';
 
-import 'buildo-react-components/src/BackgroundDimmer/examples/backgroundDimmer.scss';
-import 'buildo-react-components/src/BackgroundDimmer/examples/cover.png';
-import 'buildo-react-components/src/BackgroundDimmer/examples/rating.png';
+import '../sections/components/BackgroundDimmer/backgroundDimmer.scss';
+import '../sections/components/BackgroundDimmer/cover.png';
+import '../sections/components/BackgroundDimmer/rating.png';
 
-import 'buildo-react-components/src/NavBar/examples/navBar.scss';
+import '../sections/components/NavBar/navBar.scss';
 
-import 'buildo-react-components/src/DropdownMenu/examples/userMenu.scss';
-import 'buildo-react-components/src/DropdownMenu/examples/avatar.png';
+import '../sections/components/DropdownMenu/userMenu.scss';
+import '../sections/components/DropdownMenu/avatar.png';
 
-import 'buildo-react-components/src/Dropdown/examples/dropdown.scss';
+import '../sections/components/Dropdown/dropdown.scss';
 
-import 'buildo-react-components/src/ScrollView/examples/scroll.gif';
+import '../sections/components/ScrollView/scroll.gif';
 
-import 'buildo-react-components/src/Meter/examples/meter.scss';
+import '../sections/components/Meter/meter.scss';
 
-import 'buildo-react-components/src/Popover/examples/popover.scss';
-import 'buildo-react-components/src/Popover/examples/popover.scss';
-import 'buildo-react-components/src/Popover/examples/avatar1.png';
-import 'buildo-react-components/src/Popover/examples/avatar2.png';
-import 'buildo-react-components/src/Popover/examples/avatar3.png';
+import '../sections/components/Popover/popover.scss';
+import '../sections/components/Popover/popover.scss';
+import '../sections/components/Popover/avatar1.png';
+import '../sections/components/Popover/avatar2.png';
+import '../sections/components/Popover/avatar3.png';
 
-import 'buildo-react-components/src/BrowserDetector/examples/browserDetector.scss';
+import '../sections/components/BrowserDetector/browserDetector.scss';
 
-import 'buildo-react-components/src/InputChildren/examples/inputChildren.scss';
+// import 'buildo-react-components/src/InputChildren/examples/inputChildren.scss';

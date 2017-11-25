@@ -90,7 +90,7 @@ export default class StyleGuide extends Component {
 		const panelProps = {
 			type: 'floating',
 			style: { border: 'none' },
-			className: 'component-tabs live-demo',
+			className: 'component-tabs',
       tabs: {
         headers: [ 'UX Guidelines', 'Live Examples' ],
         onSetActiveTab: this.onSetActiveTab,
@@ -119,7 +119,9 @@ export default class StyleGuide extends Component {
 				<div>
 					<h1 className='component-title'>{startCase(component.name)}</h1>
 					<TabbedPanel {...panelProps}>
-						{children}
+						<div className='examples'>
+							{children}
+						</div>
 					</TabbedPanel>
 				</div>
 			);

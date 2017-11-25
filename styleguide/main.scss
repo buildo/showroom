@@ -22,12 +22,12 @@ h1.component-title {
 .component-tabs.panel.tabbed-panel {
   margin: 0;
 
-  .panel-content {
+  > .panel-content {
     padding: 0;
     padding-top: 30px;
   }
 
-  .panel-header .tabbed-panel-tabs {
+  > .panel-header .tabbed-panel-tabs {
     background: white;
     border-bottom: 1px solid #ced0da;
 
@@ -46,7 +46,7 @@ h1.component-title {
 
 // MARKDOWN CONTENT
 #app {
-  article {
+  article[class^="rsg"] {
     color: #727a86;
     h1 {
       font-size: 27px;
@@ -67,7 +67,7 @@ h1.component-title {
     }
   }
 
-  table {
+  table[class^="rsg"] {
     margin-top: 34px;
     border-collapse: collapse;
     color: #354052;
@@ -107,14 +107,3 @@ h1.component-title {
 body {
   font-size: 14px;
 }
-
-// @import '~buildo-react-components/src/AsyncStatusIndicator/asyncStatusIndicator.scss';
-// @import '~buildo-react-components/src/Badge/badge.scss';
-// @import '~buildo-react-components/src/BackgroundDimmer/examples/backgroundDimmer.scss';
-// @import '~buildo-react-components/src/BrowserDetector/examples/browserDetector.scss';
-// @import '~buildo-react-components/src/CollapsibleSection/collapsibleSection.scss';
-// @import '~buildo-react-components/src/CollapsibleSection/examples/collapsibleSection.scss';
-// @import '~buildo-react-components/src/ConfirmationInput/confirmationInput.scss';
-// @import '~buildo-react-components/src/Panel/panel.scss';
-// @import '~buildo-react-components/src/Panel/tabbedPanel.scss';
-@import '~react-flexview/lib/flexView.css';

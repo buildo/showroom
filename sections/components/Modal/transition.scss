@@ -1,0 +1,45 @@
+.modal {
+  &.enter {
+    .background-dimmer {
+      transition: opacity 500ms ease-in;
+      opacity: .01;
+    }
+
+    .modal-content {
+      transform: scale(0);
+      transition: transform 350ms ease-in;
+    }
+  }
+
+  &.enter.enter-active {
+    .background-dimmer {
+      opacity: 1;
+    }
+
+    .modal-content {
+      transform: scale(1);
+    }
+  }
+
+  &.leave {
+    .background-dimmer {
+      transition: opacity 500ms ease-in;
+      opacity: 1;
+    }
+
+    .modal-content {
+      transform: scale(1);
+      transition: transform 350ms ease-in;
+    }
+  }
+
+  &.leave.leave-active {
+    .background-dimmer {
+      opacity: .01;
+    }
+
+    .modal-content {
+      transform: scale(0);
+    }
+  }
+}

@@ -46,7 +46,7 @@ module.exports = {
   showUsage: true, // show props by default
   getComponentPathLine(componentPath) {
     const name = path.basename(componentPath, '.tsx');
-    return `import ${name} from @buildo/react${kebabCase(name)}`;
+    return `import ${name} from @buildo/react-${kebabCase(name)}`;
   },
   getExampleFilename(componentPath) {
     const name = path.basename(componentPath, '.tsx');
