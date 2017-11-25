@@ -41,16 +41,16 @@ const popoverProps = {
 ```js
 const Item = ({ title, image }) => (
   <FlexView column hAlignContent='center' className='option'>
-    <img src={`../../src/Popover/examples/${image}.png`} />
+    <img src={`${image}.png`} />
     <Button size='medium' label={title} onClick={() => {}} />
   </FlexView>
 );
 
 const content = (
   <FlexView>
-    <Item title='Spider-Man' image='avatar1' />
-    <Item title='Iron Man' image='avatar2' />
-    <Item title='Daredevil' image='avatar3' />
+    <Item title='Spider-Man' image='avatarPopover1' />
+    <Item title='Iron Man' image='avatarPopover2' />
+    <Item title='Daredevil' image='avatarPopover3' />
   </FlexView>
 );
 

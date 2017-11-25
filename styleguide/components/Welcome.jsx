@@ -27,7 +27,7 @@ export default class Welcome extends React.Component {
     const ColumnTemplate = ({ title, icon, children }) => (
       <FlexView className='column-template' column shrink basis='100%'>
         <FlexView basis={50} vAlignContent='center' style={{ marginBottom: 10 }}>
-          {icon && <img src={`/${icon}.png`} srcSet={`/${icon}@2x.png 2x`} />}
+          {icon && <img src={`${icon}.png`} srcSet={`${icon}@2x.png 2x`} />}
         </FlexView>
         <h2 style={{ lineHeight: 1, margin: 0 }}>{title}</h2>
         {children}
@@ -45,7 +45,7 @@ export default class Welcome extends React.Component {
             <Button flat label='Star' icon='github' onClick={this.onStarClick} />
           </FlexView>
           <FlexView shrink={false} className='current-release' />
-          <FlexView shrink={false} className='pattern' />
+          <FlexView shrink={false} className='pattern' style={{ backgroundImage: 'url(pattern.png)' }} />
         </FlexView>
         <FlexView column className='content'>
           <h1>Introduction</h1>

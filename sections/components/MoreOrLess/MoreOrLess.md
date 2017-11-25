@@ -25,7 +25,7 @@ const templateExpanded = () => (
       </FlexView>
     </FlexView>
     <FlexView grow shrink={false} hAlignContent='right'>
-      <img src='./src/MoreOrLess/examples/image.png' />
+      <img src='moreOrLess.png' />
     </FlexView>
   </FlexView>
 );
@@ -42,7 +42,7 @@ const templateCollapsed = () => (
       </FlexView>
     </FlexView>
     <FlexView grow hAlignContent='right' vAlignContent='center'>
-      <img src='./src/MoreOrLess/examples/image2.png' style={{ width: 'auto', height: 80 }} />
+      <img src='moreOrLess2.png' style={{ width: 'auto', height: 80 }} />
     </FlexView>
   </FlexView>
 );

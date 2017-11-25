@@ -16,13 +16,13 @@ const Card = ({ title, author, date, image, children }) => (
       </FlexView>
     </FlexView>
     <FlexView shrink basis='100%'>
-      <img src={`./src/Panel/examples/${image}`} />
+      <img src={`${image}`} />
     </FlexView>
   </FlexView>
 );
 
 <Panel type='floating'>
-  <Card title='The Student Hotel' author='Taylor Cambell' date='7th of March' image='image1.png'>
+  <Card title='The Student Hotel' author='Taylor Cambell' date='7th of March' image='panel1.png'>
     What is boutique hotel design, and why does it matter?
     There are fashion trends in hotel design just
     as there are in other areas. In the late eighties and
@@ -50,7 +50,7 @@ const Card = ({ title, author, date, image, children }) => (
       </FlexView>
     </FlexView>
     <FlexView shrink basis='100%'>
-      <img src={`./src/Panel/examples/${image}`} />
+      <img src={`${image}`} />
     </FlexView>
   </FlexView>
 );
@@ -66,7 +66,7 @@ const panelHeader = {
 };
 
 <Panel type='floating' header={panelHeader}>
-  <Card title='The Student Hotel' author='Taylor Cambell' date='7th of March' image='image1.png'>
+  <Card title='The Student Hotel' author='Taylor Cambell' date='7th of March' image='panel1.png'>
     What is boutique hotel design, and why does it matter?
     There are fashion trends in hotel design just
     as there are in other areas. In the late eighties and
@@ -75,7 +75,7 @@ const panelHeader = {
     such a diversion from the traditional way.
   </Card>
   <Divider />
-  <Card title='A Surf Odyssey' author='Taylor Cambell' date='1th of March' image='image2.png'>
+  <Card title='A Surf Odyssey' author='Taylor Cambell' date='1th of March' image='panel2.png'>
     What is boutique hotel design, and why does it matter?
     There are fashion trends in hotel design just
     as there are in other areas. In the late eighties and
@@ -105,7 +105,7 @@ const Card = ({ title, author, date, image, children }) => (
       </FlexView>
     </FlexView>
     <FlexView shrink basis='100%'>
-      <img src={`./src/Panel/examples/${image}`} />
+      <img src={`${image}`} />
     </FlexView>
   </FlexView>
 );
@@ -133,7 +133,7 @@ const panelProps = {
 };
 
 <Panel {...panelProps}>
-  <Card title='Ho(s)tel in Reykjavic' author='Taylor Cambell' date='7th of March' image='image3.png'>
+  <Card title='Ho(s)tel in Reykjavic' author='Taylor Cambell' date='7th of March' image='panel3.png'>
     Celiac hoodie art party chia cardigan pork belly ugh,
     fanny pack tousled.
     Master cleanse bicycle rights thundercats,
@@ -182,7 +182,7 @@ const panelProps = {
 
 <FlexView width={isCollapsed ? 90 : undefined}>
   <Panel {...panelProps} style={{ height: isCollapsed ? 200 : undefined }}>
-    <img src='./src/Panel/examples/image4.png' width={310} />
+    <img src='panel4.png' width={310} />
   </Panel>
 </FlexView>
 ```

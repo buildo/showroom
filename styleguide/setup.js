@@ -62,37 +62,23 @@ import 'buildo-react-components/src/DateField/dateField.scss';
 import '../sections/components/Modal/transition.scss';
 
 import '../sections/components/MoreOrLess/default.scss';
-import '../sections/components/MoreOrLess/image.png';
-import '../sections/components/MoreOrLess/image2.png';
 
 import '../sections/components/Panel/default.scss';
-import '../sections/components/Panel/image1.png';
-import '../sections/components/Panel/image2.png';
-import '../sections/components/Panel/image3.png';
-import '../sections/components/Panel/image4.png';
 
 import '../sections/components/CollapsibleSection/collapsibleSection.scss';
 
 import '../sections/components/BackgroundDimmer/backgroundDimmer.scss';
-import '../sections/components/BackgroundDimmer/cover.png';
-import '../sections/components/BackgroundDimmer/rating.png';
 
 import '../sections/components/NavBar/navBar.scss';
 
 import '../sections/components/DropdownMenu/userMenu.scss';
-import '../sections/components/DropdownMenu/avatar.png';
 
 import '../sections/components/Dropdown/dropdown.scss';
-
-import '../sections/components/ScrollView/scroll.gif';
 
 import '../sections/components/Meter/meter.scss';
 
 import '../sections/components/Popover/popover.scss';
 import '../sections/components/Popover/popover.scss';
-import '../sections/components/Popover/avatar1.png';
-import '../sections/components/Popover/avatar2.png';
-import '../sections/components/Popover/avatar3.png';
 
 import '../sections/components/BrowserDetector/browserDetector.scss';
 

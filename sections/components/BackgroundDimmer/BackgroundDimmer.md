@@ -5,13 +5,13 @@ initialState = { opened: false };
 
 const Card = ({ image, title, author, children }) => (
   <FlexView column width={350} className='card'>
-    <img src={`/${image}`} />
+    <img src={`${image}`} />
     <FlexView vAlignContent='center'>
       <FlexView grow className='card-title'>
         {title}
       </FlexView>
       <FlexView shrink={false} className='card-rating'>
-        <img src='/rating.png' height={12} />
+        <img src='rating.png' height={12} />
       </FlexView>
     </FlexView>
     <FlexView className='card-author'>

@@ -44,7 +44,7 @@ const icon = isOpen ? 'angleUpsvg' : 'angleDown';
   <DropdownMenu {...dropdownMenuProps}>
     <FlexView vAlignContent='center' className='user-menu'>
       <FlexView shrink={false} className='user-avatar'>
-        <img src='../../src/DropdownMenu/examples/avatar.png' />
+        <img src='avatarDropdownMenu.png' />
       </FlexView>
       <FlexView column grow>
         <FlexView className='user-name'>Jordan J.</FlexView>

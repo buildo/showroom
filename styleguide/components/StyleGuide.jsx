@@ -130,7 +130,7 @@ export default class StyleGuide extends Component {
     return (
       <div>
         <div style={{ height: 104 }}>
-          <div className='pattern-getting-started' />
+          <div className='pattern-getting-started' style={{ backgroundImage: 'url(pattern.png)' }} />
         </div>
         <Sections sections={[section]} root depth={0} />
       </div>
