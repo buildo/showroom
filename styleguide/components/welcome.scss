@@ -1,0 +1,86 @@
+@import '~buildo-react-components/src/utils/theme/variables.scss';
+
+.welcome {
+  position: absolute;
+  left: 240px;
+  top: 0;
+  width: calc(100% - 240px);
+
+  .header {
+    position: relative;
+    height: 478px;
+    background-color: #1a91eb;
+
+
+    .title {
+      margin-top: 105px;
+      color: #fff;
+      font-size: 59px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin-top: 20px;
+      color: #fff;
+      font-size: 26px;
+      font-weight: 300;
+      opacity: .62;
+    }
+
+    .action-buttons {
+      margin-top: 50px;
+
+      .button .button-inner.is-flat {
+        height: 32px;
+        color: $brc-white;
+        border-color: rgba($brc-white, .5);
+        padding: 7px 20px !important;
+
+        .icon-github {
+          font-size: 22px;
+        }
+
+        &:hover {
+          color: $brc-white !important;
+          border-color: $brc-white !important;
+        }
+      }
+
+      .button:first-child {
+        margin-right: 12px;
+      }
+    }
+
+    .current-release {
+      margin-top: 10px;
+      margin-bottom: 130px;
+      font-size: 14px;
+      font-weight: 600;
+      color: $brc-white;
+    }
+
+    .pattern {
+      height: 104px;
+      width: 100%;
+      background: #fff url(/pattern.png) repeat-x left bottom;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+
+  .content {
+    margin: 40px 60px;
+  }
+
+  .column-template {
+    padding: 0 10px;
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+}

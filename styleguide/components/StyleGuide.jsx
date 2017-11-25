@@ -5,13 +5,13 @@ import TableOfContents from 'react-styleguidist/lib/rsg-components/TableOfConten
 import StyleGuideRenderer from 'react-styleguidist/lib/rsg-components/StyleGuide/StyleGuideRenderer';
 import ReactComponent from 'react-styleguidist/lib/rsg-components/ReactComponent';
 import Sections from 'react-styleguidist/lib/rsg-components/Sections';
-import Welcome from 'react-styleguidist/lib/rsg-components/Welcome';
 import { HOMEPAGE } from 'react-styleguidist/scripts/consts';
 import { TabbedPanel } from 'buildo-react-components/src/Panel';
 import * as startCase from 'lodash/startCase';
 import * as omit from 'lodash/omit';
 import * as queryString from 'query-string';
 import * as brc from 'buildo-react-components/src';
+import Welcome from './Welcome';
 
 export default class StyleGuide extends Component {
 	static propTypes = {
@@ -19,8 +19,8 @@ export default class StyleGuide extends Component {
 		config: PropTypes.object.isRequired,
 		slots: PropTypes.object.isRequired,
 		// sections: PropTypes.array.isRequired,
-		welcomeScreen: PropTypes.bool,
-		patterns: PropTypes.array,
+		// welcomeScreen: PropTypes.bool,
+		// patterns: PropTypes.array,
 		isolatedComponent: PropTypes.bool,
 		isolatedExample: PropTypes.bool,
 		isolatedSection: PropTypes.bool,
@@ -139,14 +139,10 @@ export default class StyleGuide extends Component {
 	}
 
 	render() {
-		const { config, sections, welcomeScreen, patterns, isolatedComponent } = this.props;
+		const { config, sections, isolatedComponent } = this.props;
 
 		const slug = Object.keys(omit(queryString.parse(window.location.hash), 'tab'))[0];
 		const section = this.findSection(sections, slug) || sections[0];
-
-		if (welcomeScreen) {
-			return <Welcome patterns={patterns} />;
-		}
 
 		return (
 			<StyleGuideRenderer
@@ -155,7 +151,7 @@ export default class StyleGuide extends Component {
 				toc={<TableOfContents sections={sections} />}
 				hasSidebar={config.showSidebar && !isolatedComponent}
 			>
-				{this.getChildren(section)}
+				{!window.location.hash ? <Welcome /> : this.getChildren(section)}
 			</StyleGuideRenderer>
 		);
 	}

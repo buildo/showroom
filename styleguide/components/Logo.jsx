@@ -7,10 +7,8 @@ export default class LogoRenderer extends React.PureComponent {
 
   render() {
     return (
-      <FlexView column className='brc-logo' height={208} hAlignContent='center' vAlignContent='center'>
-        <a href='http://buildo.io' target='_blank' style={{ textAlign: 'center', paddingBottom: 0 }}>
-          <img src={logo} width='100px' />
-        </a>
+      <FlexView column className='brc-logo' height={208} hAlignContent='center' vAlignContent='center' style={{ cursor: 'pointer' }} onClick={() => window.location.hash = ''}>
+        <img src={logo} width='100px' />
         <span style={{ color: '#354053', fontSize: 30, fontWeight: 400 }}>
           buildo
         </span>
