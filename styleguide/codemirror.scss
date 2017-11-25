@@ -1,0 +1,167 @@
+// Based on Sublime Text's Monokai theme
+#app {
+  .CodeMirror {
+    background: #1b2b34;
+    color: #cdd3de;
+  }
+
+  div.CodeMirror-selected {
+    background: #a7adba !important;
+  }
+
+  .CodeMirror ::selection {
+    background: #4f5b66;
+  }
+
+  .CodeMirror ::-moz-selection {
+    background: rgba(73, 72, 62, .99);
+  }
+
+  .CodeMirror-gutters {
+    background: #272822;
+    border-right: 0;
+  }
+
+  .CodeMirror-guttermarker {
+    color: white;
+  }
+
+  .CodeMirror-guttermarker-subtle {
+    color: #d0d0d0;
+  }
+
+  .CodeMirror-linenumber {
+    color: #d0d0d0;
+  }
+
+  .CodeMirror-cursor {
+    border-left: 1px solid #f8f8f0 !important;
+  }
+
+  span.cm-comment {
+    color: #65737e;
+  }
+
+  span.cm-atom {
+    color: #f99157;
+  }
+
+  span.cm-number {
+    color: #f99157;
+  }
+
+  // span.cm-property {color: #6699CC;}
+  span.cm-property {
+    // color: #96b9dc;
+    color: #cdcdcd;
+  }
+
+  span.cm-attribute {
+    color: #c594c5;
+  }
+
+  span.cm-keyword {
+    // color: #f2777a;
+    color: #569cd3;
+  }
+
+  span.cm-string {
+    // color: #99c794;
+    color: ca8e76;
+  }
+
+  span.cm-string-2 {
+    color: #cdd3de;
+  }
+
+  // span.cm-variable {color: #CDD3DE;}
+  span.cm-variable {
+    color: #69c;
+  }
+
+  span.cm-variable-2 {
+    color: #9effff;
+  }
+
+  span.cm-def {
+    // color: #fd971f;
+    color: #9cdcfc;
+  }
+
+  span.cm-bracket {
+    color: #f8f8f2;
+  }
+
+  span.cm-tag {
+    // color: #f92672;
+    color: #4ec9ab;
+  }
+
+  span.cm-link {
+    color: #ae81ff;
+  }
+
+  span.cm-error {
+    background: #f92672;
+    color: #f8f8f0;
+  }
+
+  .CodeMirror-activeline-background {
+    background: #373831 !important;
+  }
+
+  .CodeMirror-matchingbracket {
+    text-decoration: underline;
+    color: white !important;
+  }
+
+  .hljs-keyword,
+  .hljs-winutils,
+  .method,
+  .hljs-addition,
+  .css .hljs-tag,
+  .hljs-request,
+  .hljs-status,
+  .nginx .hljs-title {
+    color: #f2777a;
+  }
+
+  .hljs-title,
+  .hljs-localvars,
+  .hljs-chunk,
+  .hljs-decorator,
+  .hljs-built_in,
+  .hljs-identifier,
+  .vhdl .hljs-literal,
+  .hljs-id,
+  .css .hljs-function,
+  .hljs-name {
+    color: #69c;
+  }
+
+  .hljs-number,
+  .hljs-command,
+  .hljs-string,
+  .hljs-tag .hljs-value,
+  .hljs-rule .hljs-value,
+  .hljs-phpdoc,
+  .hljs-dartdoc,
+  .tex .hljs-formula,
+  .hljs-regexp,
+  .hljs-hexcolor,
+  .hljs-link_url {
+    color: #99c794;
+  }
+
+  .hljs-attribute,
+  .hljs-variable,
+  .lisp .hljs-body,
+  .smalltalk .hljs-number,
+  .hljs-constant,
+  .hljs-class .hljs-title,
+  .hljs-parent,
+  .hljs-type,
+  .hljs-link_reference {
+    color: #f2777a;
+  }
+}

@@ -16,10 +16,7 @@ module.exports = {
   styleguideDir: 'build', // target of the `build` task
 
   require: [
-    // style customizations
-    path.resolve(__dirname, 'styleguide/main.scss'),
-    'buildo-normalize-css',
-    // every component should be available in the examples without an explicit import
+    // "global" setup + sass imports
     path.resolve(__dirname, 'styleguide/setup.js')
   ],
   styleguideComponents: {

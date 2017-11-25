@@ -1,5 +1,21 @@
+body {
+  font-size: 15px;
+  font-family: "Source Sans Pro", sans-serif;
+
+  input {
+    padding: 8px 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 4px;
+  }
+
+  .examples {
+    font-size: 14px;
+  }
+}
+
 #app > div {
   overflow: hidden;
+  padding-left: 240px;
 }
 
 a[title="Open isolated"] {
@@ -44,10 +60,47 @@ h1.component-title {
   }
 }
 
+// SIDEBAR
+#app div[class^="rsg--sidebar"] {
+  width: 240px;
+
+  div[class^="rsg--root"], li[class^="rsg--item"] {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 0;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  div[class^="rsg--root"] > ul > li > ul > li > a {
+    padding-left: 36px;
+  }
+
+  div[class^="rsg--root"] > ul > li > ul > li:last-child {
+    padding-bottom: 26px;
+  }
+
+  a {
+    display: block;
+    color: black;
+    padding: 10px 20px;
+    width: 100%;
+    cursor: pointer;
+    color: #727a86;
+    font-weight: 400;
+
+    &:hover {
+      color: #1a91eb;
+    }
+  }
+}
+
 // MARKDOWN CONTENT
 #app {
   article[class^="rsg"] {
     color: #727a86;
+
     h1 {
       font-size: 27px;
       font-weight: normal;
@@ -62,8 +115,23 @@ h1.component-title {
       margin-bottom: 10px;
     }
 
+    h4 {
+      color: #354052;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: "Source Sans Pro", sans-serif;
+    }
+
     button[name="rsg-code-editor"] {
       display: none;
+    }
+
+    div[class^="rsg--preview"] {
+      padding: 30px 40px;
     }
   }
 
@@ -102,8 +170,8 @@ h1.component-title {
       }
     }
   }
-}
 
-body {
-  font-size: 14px;
+  footer {
+    display: none;
+  }
 }

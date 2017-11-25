@@ -7,6 +7,8 @@ import * as sortBy from 'lodash/sortBy';
 
 import 'buildo-normalize-css';
 import 'react-flexview/src/flexView.scss';
+import './main.scss';
+import './codemirror.scss';
 
 const getRandomRow = () => {
   return {

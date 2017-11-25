@@ -23,7 +23,7 @@ const popover = {
   isOpen: true
 };
 
-<FlexView>
+<FlexView style={{ paddingBottom: 100 }}>
   <Tooltip popover={popover} size='small'>
     <span>Small tooltip!</span>
   </Tooltip>
