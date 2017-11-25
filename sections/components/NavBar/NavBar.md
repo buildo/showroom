@@ -13,8 +13,8 @@ const right = () => <Button primary size='small' icon='plus' label='New Project'
 
 const props = {
   content: {
-    left: this.left(),
-    right: this.right()
+    left: left(),
+    right: right()
   },
   background: 'white',
   height: 80
