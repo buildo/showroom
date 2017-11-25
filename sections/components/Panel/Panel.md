@@ -142,7 +142,7 @@ const panelProps = {
     Paleo fap lomo cred bespoke poutine.
     Fap organic pork belly trust fund, bushwick polaroid whatever.
     Seitan literally intelligentsia, taxidermy health goth master
-    cleanse trust fund 90's YOLO kogi bespoke drinking vinegar banhmi PBR&B.
+    cleanse trust fund 90's YOLO kogi bespoke drinking vinegar banhmi PBR.
     Food truck pickled pitchfork
   </Card>
 </Panel>

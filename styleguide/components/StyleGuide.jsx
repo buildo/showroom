@@ -11,6 +11,7 @@ import { TabbedPanel } from 'buildo-react-components/src/Panel';
 import * as startCase from 'lodash/startCase';
 import * as omit from 'lodash/omit';
 import * as queryString from 'query-string';
+import * as brc from 'buildo-react-components/src';
 
 export default class StyleGuide extends Component {
 	static propTypes = {
@@ -59,7 +60,6 @@ export default class StyleGuide extends Component {
 
 	patchGlobal() {
 		// TODO: find a better way to make examples work without an "export default" in the component file
-		const brc = require('buildo-react-components/src');
 		Object.keys(brc).forEach(k => {
 			if (k !== '__es6Module') {
 				global[k] = brc[k];

@@ -1254,7 +1254,7 @@ buildo-normalize-css@^3.0.2:
 
 buildo-react-components@buildo/react-components:
   version "0.29.0"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/fcf1cd95b525ac2fa611aa2105b75b9bd44fc89d"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/f08db03b8ff54aa8156db4a2d605932db1181549"
   dependencies:
     "@types/classnames" "2.2.3"
     "@types/fixed-data-table" "0.6.32"
