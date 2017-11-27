@@ -92,7 +92,7 @@ export default class StyleGuide extends Component {
       style: { border: 'none' },
       className: 'component-tabs',
       tabs: {
-        headers: [ 'UX Guidelines', 'Live Examples' ],
+        headers: [ 'Live Examples', 'UX Guidelines' ],
         onSetActiveTab: this.onSetActiveTab,
         activeIndex: activeTabIndex
       }
@@ -112,8 +112,8 @@ export default class StyleGuide extends Component {
       };
 
       const children = activeTabIndex === 0 ?
-        <Sections sections={[UXGuidelines]} root depth={0} /> :
-        <ReactComponent component={component} root />;
+        <ReactComponent component={component} root /> :
+        <Sections sections={[UXGuidelines]} root depth={0} /> ;
 
       return (
         <div>
