@@ -100,13 +100,14 @@ export default class StyleGuide extends Component {
 
     if (isReactComponent) {
       const component = section;
+      console.log(component.name);
       const UXGuidelines = {
         components: [],
         sections: [],
         name: component.name,
         slug: component.slug,
         content: [{
-          content: 'TODO', // require(`raw-loader!../../sections/components/${component.name}/${component.name}UX.md`),
+          content: require(`raw-loader!buildo-react-components/src/${component.name}/README.md`),
           type: 'markdown'
         }]
       };
