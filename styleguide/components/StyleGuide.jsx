@@ -106,7 +106,7 @@ export default class StyleGuide extends Component {
         name: component.name,
         slug: component.slug,
         content: [{
-          content: 'TODO' || require(`raw-loader!../../sections/components/${component.name}/${component.name}UX.md`),
+          content: 'TODO', // require(`raw-loader!../../sections/components/${component.name}/${component.name}UX.md`),
           type: 'markdown'
         }]
       };

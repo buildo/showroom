@@ -47,7 +47,6 @@ module.exports = {
     return `import ${name} from @buildo/react-${kebabCase(name)}`;
   },
   getExampleFilename(componentPath) {
-    const name = endsWith(componentPath, '.tsx') ? path.basename(componentPath, '.tsx') : path.basename(componentPath, '.ts');
-    return path.resolve(__dirname, `sections/components/${name}/${name}.md`);
+    return componentPath.split('/').slice(0, -1).concat('Examples.md').join('/');
   }
 };

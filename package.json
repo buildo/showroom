@@ -27,7 +27,7 @@
     "webpack": "^3.5.5"
   },
   "dependencies": {
-    "buildo-react-components": "buildo/react-components",
+    "buildo-react-components": "buildo/react-components#styleguidist",
     "faker": "^4.1.0",
     "lodash": "^4.17.4",
     "progress-bar-webpack-plugin": "^1.10.0",

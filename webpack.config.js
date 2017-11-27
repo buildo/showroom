@@ -46,11 +46,9 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif)$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 25000,
-          }
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]'
         }
       }
     ]
