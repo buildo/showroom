@@ -37,7 +37,8 @@ module.exports = {
     },
     {
       name: 'Components',
-      components: () => [].concat(brcComponents)
+      components: () => brcComponents
+        .concat(path.resolve(__dirname, 'node_modules/react-autosize-textarea/src/TextareaAutosize'))
     }
   ],
   showCode: true,
@@ -47,6 +48,10 @@ module.exports = {
     return `import ${name} from @buildo/react-${kebabCase(name)}`;
   },
   getExampleFilename(componentPath) {
-    return componentPath.split('/').slice(0, -1).concat('Examples.md').join('/');
+    if (componentPath.includes('buildo-react-components')) {
+      return componentPath.split('/').slice(0, -1).concat('Examples.md').join('/');
+    } else {
+      return componentPath.split('/').slice(0, -2).concat(['examples', 'Examples.md']).join('/');
+    }
   }
 };

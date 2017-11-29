@@ -82,6 +82,13 @@ export default class StyleGuide extends Component {
     }, null);
   }
 
+  getUXGuidelines(componentName) {
+    switch (componentName) {
+      case 'TextareaAutosize': return require(`raw-loader!react-autosize-textarea/src/README.md`)
+      default: return require(`raw-loader!buildo-react-components/src/${componentName}/README.md`)
+    }
+  }
+
   getChildren(section) {
     const isReactComponent = !section.sections && !section.components;
 
@@ -107,7 +114,7 @@ export default class StyleGuide extends Component {
         name: component.name,
         slug: component.slug,
         content: [{
-          content: require(`raw-loader!buildo-react-components/src/${component.name}/README.md`),
+          content: this.getUXGuidelines(component.name),
           type: 'markdown'
         }]
       };
