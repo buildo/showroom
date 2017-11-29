@@ -85,6 +85,8 @@ export default class StyleGuide extends Component {
   getUXGuidelines(componentName) {
     switch (componentName) {
       case 'TextareaAutosize': return require(`raw-loader!react-autosize-textarea/src/README.md`)
+      case 'InputChildren': return require(`raw-loader!react-input-children/src/README.md`)
+      case 'CookieBanner': return require(`raw-loader!react-cookie-banner/src/README.md`)
       default: return require(`raw-loader!buildo-react-components/src/${componentName}/README.md`)
     }
   }

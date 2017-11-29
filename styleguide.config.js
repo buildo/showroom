@@ -36,8 +36,11 @@ module.exports = {
     },
     {
       name: 'Components',
-      components: () => brcComponents
-        .concat(path.resolve(__dirname, 'node_modules/react-autosize-textarea/src/TextareaAutosize'))
+      components: () => brcComponents.concat([
+        path.resolve(__dirname, 'node_modules/react-autosize-textarea/src/TextareaAutosize'),
+        path.resolve(__dirname, 'node_modules/react-input-children/src/InputChildren'),
+        path.resolve(__dirname, 'node_modules/react-cookie-banner/src/CookieBanner')
+      ])
     }
   ],
   showCode: true,
