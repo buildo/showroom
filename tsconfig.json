@@ -16,6 +16,7 @@
   },
   "include": [
     "typings",
+    "styleguide/**/*",
     "node_modules"
   ]
 }

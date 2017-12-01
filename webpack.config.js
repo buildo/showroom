@@ -30,7 +30,6 @@ module.exports = {
           {
             loader: 'ts-loader',
             options: {
-              transpileOnly: true,
               configFile: require('path').resolve(__dirname, 'tsconfig.json')
             }
           }

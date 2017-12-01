@@ -1,14 +1,13 @@
 import * as React from 'react';
 import FlexView from 'react-flexview';
 import Button from 'buildo-react-components/src/Button';
-import { t, props } from 'tcomb-react';
 
-require('../assets/rocket.png');
-require('../assets/tools.png');
-require('../assets/window.png');
-require('../assets/rocket@2x.png');
-require('../assets/tools@2x.png');
-require('../assets/window@2x.png');
+import './rocket.png';
+import './tools.png';
+import './window.png';
+import './rocket@2x.png';
+import './tools@2x.png';
+import './window@2x.png';
 
 import './welcome.scss';
 
@@ -24,7 +23,7 @@ export default class Welcome extends React.Component {
 
   render() {
 
-    const ColumnTemplate = ({ title, icon, children }) => (
+    const ColumnTemplate = ({ title, icon, children }: { title: string, icon: string, children: React.ReactNode }) => (
       <FlexView className='column-template' column shrink basis='100%'>
         <FlexView basis={50} vAlignContent='center' style={{ marginBottom: 10 }}>
           {icon && <img src={`${icon}.png`} srcSet={`${icon}@2x.png 2x`} />}

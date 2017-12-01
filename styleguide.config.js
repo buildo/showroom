@@ -18,11 +18,11 @@ module.exports = {
 
   require: [
     // "global" setup + sass imports
-    path.resolve(__dirname, 'styleguide/setup.js')
+    path.resolve(__dirname, 'styleguide/setup.ts')
   ],
   styleguideComponents: {
-    Logo: path.resolve(__dirname, 'styleguide/components/Logo.jsx'),
-    StyleGuide: path.join(__dirname, 'styleguide/components/StyleGuide.jsx')
+    Logo: path.resolve(__dirname, 'styleguide/components/Logo.tsx'),
+    StyleGuide: path.join(__dirname, 'styleguide/components/StyleGuide.tsx')
   },
 
   // content

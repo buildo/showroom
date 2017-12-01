@@ -6,14 +6,28 @@ import StyleGuideRenderer from 'react-styleguidist/lib/rsg-components/StyleGuide
 import ReactComponent from 'react-styleguidist/lib/rsg-components/ReactComponent';
 import Sections from 'react-styleguidist/lib/rsg-components/Sections';
 import { HOMEPAGE } from 'react-styleguidist/scripts/consts';
-import { TabbedPanel } from 'buildo-react-components/src/Panel';
-import * as startCase from 'lodash/startCase';
-import * as omit from 'lodash/omit';
+import { startCase, omit } from 'lodash';
 import * as queryString from 'query-string';
 import * as brc from 'buildo-react-components/src';
+import { TabbedPanel } from 'buildo-react-components/src/Panel';
+import { getBackgroundUrl } from 'buildo-react-components/src/Image';
 import Welcome from './Welcome';
 
-export default class StyleGuide extends Component {
+declare const global: any;
+
+type Props = {
+  codeRevision: number,
+  config: object,
+  slots: object,
+  // sections: PropTypes.array.isRequired,
+  // welcomeScreen: PropTypes.bool,
+  // patterns: PropTypes.array,
+  isolatedComponent?: boolean,
+  isolatedExample?: boolean,
+  isolatedSection?: boolean
+}
+
+export default class StyleGuide extends Component<Props> {
   static propTypes = {
     codeRevision: PropTypes.number.isRequired,
     config: PropTypes.object.isRequired,
@@ -65,10 +79,10 @@ export default class StyleGuide extends Component {
         global[k] = brc[k];
       }
     });
-    global.getBackgroundUrl = require('buildo-react-components/src/Image').getBackgroundUrl;
+    global.getBackgroundUrl = getBackgroundUrl;
   }
 
-  findSection(sections, slug, hack) {
+  findSection(sections: any[], slug: string): any {
     return sections.reduce((acc, s) => {
       if (acc) {
         return acc;
@@ -77,12 +91,12 @@ export default class StyleGuide extends Component {
       } else if (s.sections && s.sections.length > 0) {
         return this.findSection(s.sections, slug);
       } else if (s.components && s.components.length > 0) {
-        return this.findSection(s.components, slug, true);
+        return this.findSection(s.components, slug);
       }
     }, null);
   }
 
-  getUXGuidelines(componentName) {
+  getUXGuidelines(componentName: string) {
     switch (componentName) {
       case 'TextareaAutosize': return require(`raw-loader!react-autosize-textarea/src/README.md`)
       case 'InputChildren': return require(`raw-loader!react-input-children/src/README.md`)
@@ -160,6 +174,8 @@ export default class StyleGuide extends Component {
 
     const slug = Object.keys(omit(queryString.parse(window.location.hash), 'tab'))[0];
     const section = this.findSection(sections, slug) || sections[0];
+
+    console.log(section);
 
     return (
       <StyleGuideRenderer
