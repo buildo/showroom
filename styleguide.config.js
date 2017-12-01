@@ -40,7 +40,7 @@ module.exports = {
         path.resolve(__dirname, 'node_modules/react-autosize-textarea/src/TextareaAutosize'),
         path.resolve(__dirname, 'node_modules/react-input-children/src/InputChildren'),
         path.resolve(__dirname, 'node_modules/react-cookie-banner/src/CookieBanner')
-      ])
+      ]).sort((a, b) => a.split('/').slice(-1)[0].toLowerCase() > b.split('/').slice(-1)[0].toLowerCase() ? 1 : -1)
     }
   ],
   showCode: true,
