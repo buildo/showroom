@@ -17,6 +17,9 @@
   "include": [
     "typings",
     "styleguide/**/*",
-    "node_modules"
+    "node_modules/buildo-react-components/**/*",
+    "node_modules/react-input-children/**/*",
+    "node_modules/react-autosize-textarea/**/*",
+    "node_modules/react-cookie-banner/**/*"
   ]
 }

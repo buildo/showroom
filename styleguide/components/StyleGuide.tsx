@@ -15,11 +15,30 @@ import Welcome from './Welcome';
 
 declare const global: any;
 
+type WrapperSection = {
+  name: string,
+  slug: string,
+  components: ComponentSection[],
+  content: { content: string, type: string }[],
+  sections: any[]
+}
+
+type ComponentSection = {
+  filepath: string,
+  hasExamples: boolean,
+  metadata: object,
+  module: any,
+  name: string,
+  pathLine: string,
+  props: any,
+  slug: string
+}
+
 type Props = {
   codeRevision: number,
-  config: object,
+  config: { title: string, showSidebar: boolean },
   slots: object,
-  // sections: PropTypes.array.isRequired,
+  sections: WrapperSection[],
   // welcomeScreen: PropTypes.bool,
   // patterns: PropTypes.array,
   isolatedComponent?: boolean,
@@ -32,7 +51,7 @@ export default class StyleGuide extends Component<Props> {
     codeRevision: PropTypes.number.isRequired,
     config: PropTypes.object.isRequired,
     slots: PropTypes.object.isRequired,
-    // sections: PropTypes.array.isRequired,
+    sections: PropTypes.array.isRequired,
     // welcomeScreen: PropTypes.bool,
     // patterns: PropTypes.array,
     isolatedComponent: PropTypes.bool,
@@ -82,8 +101,8 @@ export default class StyleGuide extends Component<Props> {
     global.getBackgroundUrl = getBackgroundUrl;
   }
 
-  findSection(sections: any[], slug: string): any {
-    return sections.reduce((acc, s) => {
+  findSection(sections: any, slug: string): WrapperSection | ComponentSection {
+    return sections.reduce((acc: any, s: any) => {
       if (acc) {
         return acc;
       } else if (s.slug === slug) {
@@ -105,7 +124,7 @@ export default class StyleGuide extends Component<Props> {
     }
   }
 
-  getChildren(section) {
+  getChildren(section: any) {
     const isReactComponent = !section.sections && !section.components;
 
     const activeTabIndex = parseInt(queryString.parse(window.location.hash).tab) || 0;
@@ -123,7 +142,7 @@ export default class StyleGuide extends Component<Props> {
 
     if (isReactComponent) {
       const component = section;
-      console.log(component.name);
+
       const UXGuidelines = {
         components: [],
         sections: [],
@@ -161,7 +180,7 @@ export default class StyleGuide extends Component<Props> {
     );
   }
 
-  onSetActiveTab = (activeTabIndex) => {
+  onSetActiveTab = (activeTabIndex: number) => {
     const query = queryString.parse(window.location.hash);
     window.location.hash = queryString.stringify({
       ...query,
@@ -174,8 +193,6 @@ export default class StyleGuide extends Component<Props> {
 
     const slug = Object.keys(omit(queryString.parse(window.location.hash), 'tab'))[0];
     const section = this.findSection(sections, slug) || sections[0];
-
-    console.log(section);
 
     return (
       <StyleGuideRenderer

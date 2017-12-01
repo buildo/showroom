@@ -13,11 +13,10 @@ module.exports = {
       {
         test: /\.[jt]sx?$/,
         include: [
-          path.resolve(__dirname, 'node_modules/buildo-react-components/src'),
-          path.resolve(__dirname, 'node_modules/react-autosize-textarea/src'),
-          path.resolve(__dirname, 'node_modules/react-input-children/src'),
-          path.resolve(__dirname, 'node_modules/react-cookie-banner/src'),
-          path.resolve(__dirname, 'components'),
+          path.resolve(__dirname, 'node_modules/buildo-react-components'),
+          path.resolve(__dirname, 'node_modules/react-autosize-textarea'),
+          path.resolve(__dirname, 'node_modules/react-input-children'),
+          path.resolve(__dirname, 'node_modules/react-cookie-banner'),
           path.resolve(__dirname, 'styleguide')
         ],
         use: [
@@ -30,6 +29,7 @@ module.exports = {
           {
             loader: 'ts-loader',
             options: {
+              transpileOnly: true,
               configFile: require('path').resolve(__dirname, 'tsconfig.json')
             }
           }
