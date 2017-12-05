@@ -3,7 +3,6 @@
     "target": "esnext",
     "allowSyntheticDefaultImports": false,
     "experimentalDecorators": true,
-    "outDir": "./temp",
     "baseUrl": ".",
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
@@ -20,6 +19,7 @@
     "node_modules/buildo-react-components/**/*",
     "node_modules/react-input-children/**/*",
     "node_modules/react-autosize-textarea/**/*",
-    "node_modules/react-cookie-banner/**/*"
+    "node_modules/react-cookie-banner/**/*",
+    "node_modules/react-flexview/**/*"
   ]
 }

@@ -39,7 +39,7 @@
     "query-string": "^5.0.1",
     "react-autosize-textarea": "buildo/react-autosize-textarea",
     "react-cookie-banner": "buildo/react-cookie-banner",
-    "react-flexview": "^1.0.13",
+    "react-flexview": "^2.0.0",
     "react-input-children": "buildo/react-input-children"
   }
 }
