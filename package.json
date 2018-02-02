@@ -6,7 +6,8 @@
   "scripts": {
     "start": "styleguidist server",
     "build": "styleguidist build",
-    "deploy": "npm run build && git add docs && git commit -m 'update gh-pages' && git push"
+    "update-components": "yarn add buildo/react-components buildo/react-autosize-textarea buildo/react-cookie-banner buildo/react-input-children",
+    "deploy": "yarn update-components && yarn build && gh-pages -d build"
   },
   "devDependencies": {
     "@types/lodash": "4.14.86",
@@ -19,6 +20,7 @@
     "buildo-normalize-css": "^3.0.2",
     "css-loader": "^0.28.5",
     "file-loader": "^1.1.5",
+    "gh-pages": "^1.1.0",
     "node-sass": "^4.5.3",
     "raw-loader": "^0.5.1",
     "react": "^16",
