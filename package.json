@@ -7,7 +7,7 @@
     "start": "styleguidist server",
     "build": "styleguidist build",
     "update-components": "yarn add buildo/react-components buildo/react-autosize-textarea buildo/react-cookie-banner buildo/react-input-children",
-    "gh-pages": "gh-pages -d build",
+    "gh-pages": "gh-pages -d dist",
     "deploy": "yarn update-components && yarn build && yarn gh-pages",
     "typecheck": "tsc --noEmit --pretty"
   },
