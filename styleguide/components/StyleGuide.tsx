@@ -6,12 +6,15 @@ import StyleGuideRenderer from 'react-styleguidist/lib/rsg-components/StyleGuide
 import ReactComponent from 'react-styleguidist/lib/rsg-components/ReactComponent';
 import Sections from 'react-styleguidist/lib/rsg-components/Sections';
 import { HOMEPAGE } from 'react-styleguidist/scripts/consts';
-import { startCase, omit } from 'lodash';
+import startCase from 'lodash-es/startCase';
+import omit from 'lodash-es/omit';
 import * as queryString from 'query-string';
 import * as brc from 'buildo-react-components/src';
 import { TabbedPanel } from 'buildo-react-components/src/Panel';
 import { getBackgroundUrl } from 'buildo-react-components/src/Image';
 import Welcome from './Welcome';
+import FlexView from 'react-flexview';
+import { InputChildren } from 'react-input-children/src/InputChildren';
 
 declare const global: any;
 
@@ -99,6 +102,8 @@ export default class StyleGuide extends Component<Props> {
       }
     });
     global.getBackgroundUrl = getBackgroundUrl;
+    global.FlexView = FlexView;
+    global.InputChildren = InputChildren;
   }
 
   findSection(sections: any, slug: string): WrapperSection | ComponentSection {
@@ -156,7 +161,7 @@ export default class StyleGuide extends Component<Props> {
       };
 
       const children = activeTabIndex === 0 ?
-        <ReactComponent component={component} root /> :
+        <ReactComponent component={component} root depth={1} /> :
         <Sections sections={[UXGuidelines]} root depth={0} /> ;
 
       return (

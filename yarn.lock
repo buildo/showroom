@@ -6,21 +6,15 @@
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@types/classnames/-/classnames-2.2.3.tgz#3f0ff6873da793870e20a260cada55982f38a9e5"
 
+"@types/lodash-es@^4.17.0":
+  version "4.17.0"
+  resolved "https://registry.yarnpkg.com/@types/lodash-es/-/lodash-es-4.17.0.tgz#ed9044d62ee36a93e0650b112701986b1c74c766"
+  dependencies:
+    "@types/lodash" "*"
+
 "@types/lodash.omit@4.5.3":
   version "4.5.3"
   resolved "https://registry.yarnpkg.com/@types/lodash.omit/-/lodash.omit-4.5.3.tgz#38a28731b4123282fbc057656c5f5131e171d44b"
-  dependencies:
-    "@types/lodash" "*"
-
-"@types/lodash.pick@4.4.3":
-  version "4.4.3"
-  resolved "https://registry.yarnpkg.com/@types/lodash.pick/-/lodash.pick-4.4.3.tgz#2d979a8e2a553a26b9aa46a1d6d0bf7d07507bb4"
-  dependencies:
-    "@types/lodash" "*"
-
-"@types/lodash.some@4.6.3":
-  version "4.6.3"
-  resolved "https://registry.yarnpkg.com/@types/lodash.some/-/lodash.some-4.6.3.tgz#700f3ba9552c1e8ee1f304566985d1bb0399df75"
   dependencies:
     "@types/lodash" "*"
 
@@ -28,9 +22,9 @@
   version "4.14.96"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.96.tgz#49a402bb6984af7dd9a48cea3781744a3774bff1"
 
-"@types/lodash@4.14.86":
-  version "4.14.86"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.86.tgz#6788d3d75032c46322ff1c144c948cf8117c405b"
+"@types/node@*":
+  version "4.0.36"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-4.0.36.tgz#394672a25c7d49b48698d5fb59d3ea72d2b6e5fa"
 
 "@types/node@8.0.53":
   version "8.0.53"
@@ -43,6 +37,17 @@
 "@types/query-string@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@types/query-string/-/query-string-5.0.1.tgz#6cb41c724cb1644d56c2d1dae7c7b204e706b39e"
+
+"@types/react-dom@16.0.3":
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.3.tgz#8accad7eabdab4cca3e1a56f5ccb57de2da0ff64"
+  dependencies:
+    "@types/node" "*"
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@16.0.36":
+  version "16.0.36"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.36.tgz#ceb5639013bdb92a94147883052e69bb2c22c69b"
 
 "@types/react@16.0.25":
   version "16.0.25"
@@ -4047,6 +4052,10 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+lodash-es@^4.17.5:
+  version "4.17.5"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.5.tgz#9fc6e737b1c4d151d8f9cae2247305d552ce748f"
+
 lodash-es@^4.2.1:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.4.tgz#dcc1d7552e150a0640073ba9cb31d70f032950e7"
@@ -5405,9 +5414,9 @@ query-string@^4.1.0:
     object-assign "^4.1.0"
     strict-uri-encode "^1.0.0"
 
-query-string@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.0.1.tgz#6e2b86fe0e08aef682ecbe86e85834765402bd88"
+query-string@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/query-string/-/query-string-5.1.0.tgz#9583b15fd1307f899e973ed418886426a9976469"
   dependencies:
     decode-uri-component "^0.2.0"
     object-assign "^4.1.0"
@@ -5608,28 +5617,10 @@ react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
 
-react-flexview@3.0.1:
+react-flexview@3.0.1, react-flexview@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/react-flexview/-/react-flexview-3.0.1.tgz#63c2f9c17a016dbe84c83bc00f27b94d3b859068"
   dependencies:
-    classnames "^2.2.5"
-    lodash.omit "^4.5.0"
-    lodash.pick "^4.4.0"
-    lodash.some "^4.6.0"
-    prop-types "^15.5.6"
-    sass-flex-mixins "^0.1.0"
-    typelevel-ts "^0.2.2"
-
-react-flexview@^2.0.0:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/react-flexview/-/react-flexview-2.0.2.tgz#e613491f94f2624b7dcbc72c11ae3dbaec8c35d1"
-  dependencies:
-    "@types/classnames" "2.2.3"
-    "@types/lodash.omit" "4.5.3"
-    "@types/lodash.pick" "4.4.3"
-    "@types/lodash.some" "4.6.3"
-    "@types/prop-types" "15.5.2"
-    "@types/react" "16.0.25"
     classnames "^2.2.5"
     lodash.omit "^4.5.0"
     lodash.pick "^4.4.0"
@@ -6967,7 +6958,7 @@ typelevel-ts@0.2.3, typelevel-ts@^0.2.2:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/typelevel-ts/-/typelevel-ts-0.2.3.tgz#969a06f50542eb12ad0769d5edbd2dfec2a9edf1"
 
-typescript@^2.4.2:
+typescript@2.6.2:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.6.2.tgz#3c5b6fd7f6de0914269027f03c0946758f7673a4"
 
