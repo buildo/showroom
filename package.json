@@ -8,7 +8,7 @@
     "build": "styleguidist build",
     "update-components": "yarn add buildo/react-components buildo/react-autosize-textarea buildo/react-cookie-banner buildo/react-input-children",
     "gh-pages": "gh-pages -d dist",
-    "deploy": "yarn update-components && yarn build && yarn gh-pages",
+    "deploy": "yarn update-components && yarn build && git add docs && git commit -m 'update gh-pages' && git push",
     "typecheck": "tsc --noEmit --pretty"
   },
   "devDependencies": {
