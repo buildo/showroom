@@ -107,7 +107,7 @@ export default class StyleGuide extends Component<Props> {
   }
 
   findSection(sections: any, slug: string): WrapperSection | ComponentSection {
-    return sections.reduce((acc: any, s: any) => {
+    return sections.reduce((acc: WrapperSection | ComponentSection | null, s: any) => {
       if (acc) {
         return acc;
       } else if (s.slug === slug) {
