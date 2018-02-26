@@ -55,7 +55,14 @@ module.exports = {
   showUsage: false, // show props by default
   getComponentPathLine(componentPath) {
     const name = path.basename(componentPath, '.tsx');
-    return `import ${name} from @buildo/react-${kebabCase(name)}`;
+
+    switch (name) {
+      case 'TextareaAutosize':
+      case 'InputChildren':
+      case 'CookieBanner': return `import ${name} from react-${kebabCase(name)}`;
+      case 'FlexView': return `import FlexView from 'react-flexview'`;
+      default: return `import ${name} from buildo-react-components/lib/${name}`;
+    }
   },
   getExampleFilename(componentPath) {
     if (componentPath.includes('buildo-react-components')) {
