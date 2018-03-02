@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as cx from 'classnames';
 import { Component } from 'react';
 import * as PropTypes from 'prop-types';
 import TableOfContents from 'react-styleguidist/lib/rsg-components/TableOfContents';
@@ -136,11 +137,11 @@ export default class StyleGuide extends Component<Props> {
     const activeTabIndex = parseInt(queryString.parse(window.location.hash).tab) || 0;
 
     const panelProps = {
-      type: 'floating',
+      type: 'floating' as 'floating',
       style: { border: 'none' },
-      className: 'component-tabs',
+      className: cx('component-tabs', { 'live-examples': activeTabIndex === 0, guidelines: activeTabIndex === 1 }),
       tabs: {
-        headers: [ 'Live Examples', 'UX Guidelines' ],
+        headers: [ 'Live Examples', 'Design Guidelines' ],
         onSetActiveTab: this.onSetActiveTab,
         activeIndex: activeTabIndex
       }

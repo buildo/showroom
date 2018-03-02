@@ -1,3 +1,5 @@
+// @import '~node_modules/buildo-react-components/src/utils/theme/variables.scss';
+
 body {
   font-size: 15px;
   font-family: "Source Sans Pro", sans-serif;
@@ -29,10 +31,11 @@ header > *:first-child {
 }
 
 h1.component-title {
-  font-size: 27px;
+  font-size: 54px;
+  margin: 0;
   font-weight: 600;
   text-align: left;
-  color: #354052;
+  color: #333;
 }
 
 .component-tabs.panel.tabbed-panel {
@@ -72,6 +75,7 @@ h1.component-title {
 // SIDEBAR
 #app div[class^="rsg--sidebar"] {
   width: 240px;
+  background: #f0f3f8;
 
   div[class^="rsg--root"], li[class^="rsg--item"] {
     font-family: "Source Sans Pro", sans-serif;
@@ -90,6 +94,16 @@ h1.component-title {
     padding-bottom: 26px;
   }
 
+  div[class^="rsg--root"] > ul > li > a {
+    // font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  div[class^="rsg--logo"] {
+    background: white;
+  }
+
   a {
     display: block;
     color: black;
@@ -103,6 +117,18 @@ h1.component-title {
       color: #1a91eb;
     }
   }
+
+  input {
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-family: "Source Sans Pro", sans-serif;
+
+    &::placeholder {
+      color: rgb(144, 152, 167);
+      font-size: 16px;
+      font-family: "Source Sans Pro", sans-serif;
+    }
+  }
 }
 
 // MARKDOWN CONTENT
@@ -110,23 +136,23 @@ h1.component-title {
   main {
     margin: 0;
     padding: 40px 60px;
+    max-width: none;
+    min-width: 800px;
   }
 
-  article[class^="rsg"] {
-    color: #727a86;
-
-    h1 {
-      font-size: 27px;
-      font-weight: normal;
-      margin-top: 50px;
-      margin-bottom: 8px;
+  .guidelines {
+    img {
+      max-width: 100%;
+      margin: 10px 0;
     }
+  }
 
-    h2 {
-      font-size: 18px;
-      font-weight: 600;
-      margin-top: 40px;
-      margin-bottom: 10px;
+  .live-examples {
+    h3 {
+      font-size: 24px;
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: 16px;
     }
 
     h4 {
@@ -135,9 +161,59 @@ h1.component-title {
       font-weight: 600;
       line-height: 1.5;
     }
+  }
+
+  .guidelines,
+  .live-examples {
+    color: #727a86;
+    font-size: 15px;
 
     h1, h2, h3, h4 {
       font-family: "Source Sans Pro", sans-serif;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 50px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ced0da; // silver
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    // italic
+    em {
+      // color: #9098a7; //$brc-coolGrey;
+    }
+
+    // code
+    code {
+      padding: 2.5px 5px;
+      margin: 0;
+      font-size: 85%;
+      background-color: rgba(27,31,35,0.05);
+      border-radius: 3px;
+    }
+
+    // link
+    a,
+    a > code {
+      cursor: pointer;
+      color: #1a91eb;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
     button[name="rsg-code-editor"] {
@@ -146,6 +222,18 @@ h1.component-title {
 
     div[class^="rsg--preview"] {
       padding: 30px 40px;
+    }
+
+    ul p {
+      margin-bottom: 5px;
+    }
+
+    ul > li > ul {
+      list-style-type: circle;
+    }
+
+    ul > li > ul > li > ul {
+      list-style-type: square;
     }
   }
 
@@ -169,15 +257,32 @@ h1.component-title {
       text-align: left;
       vertical-align: middle;
 
+      &:first-child {
+        max-width: 460px;
+      }
+
       &:nth-child(2) {
         // min-width: 400px;
       }
     }
 
     tbody td {
-      padding: 0 5px;
+      padding: 20px;
       border: 1px solid #dfe3e9;
       vertical-align: middle;
+
+      strong {
+        font-weight: 600;
+      }
+
+      img {
+        min-width: 150px;
+        max-width: 100%;
+      }
+
+      &:first-child {
+        max-width: 460px;
+      }
 
       code {
         // background-color: #7f8fa4;
