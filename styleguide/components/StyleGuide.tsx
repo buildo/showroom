@@ -121,44 +121,50 @@ export default class StyleGuide extends Component<Props> {
     }, null);
   }
 
-  getUXGuidelines(componentName: string) {
+  getUXGuidelines(componentName: string): string | null {
     switch (componentName) {
       case 'TextareaAutosize': return require(`raw-loader!react-autosize-textarea/src/README.md`)
       case 'InputChildren': return require(`raw-loader!react-input-children/src/README.md`)
       case 'CookieBanner': return require(`raw-loader!react-cookie-banner/src/README.md`)
       case 'FlexView': return require(`raw-loader!react-flexview/src/README.md`)
-      default: return require(`raw-loader!buildo-react-components/src/${componentName}/README.md`)
+      default:
+        try {
+          return require(`raw-loader!buildo-react-components/src/${componentName}/README.md`)
+        } catch (e) {
+          return null;
+        }
     }
   }
 
   getChildren(section: any) {
     const isReactComponent = !section.sections && !section.components;
 
-    const activeTabIndex = parseInt(queryString.parse(window.location.hash).tab) || 0;
-
-    const panelProps = {
-      type: 'floating' as 'floating',
-      style: { border: 'none' },
-      className: cx('component-tabs', { 'live-examples': activeTabIndex === 0, guidelines: activeTabIndex === 1 }),
-      tabs: {
-        headers: [ 'Live Examples', 'Design Guidelines' ],
-        onSetActiveTab: this.onSetActiveTab,
-        activeIndex: activeTabIndex
-      }
-    };
-
     if (isReactComponent) {
       const component = section;
+      const componentUXGuidelines = this.getUXGuidelines(component.name);
 
-      const UXGuidelines = {
+      const UXGuidelines = componentUXGuidelines && {
         components: [],
         sections: [],
         name: component.name,
         slug: component.slug,
         content: [{
-          content: this.getUXGuidelines(component.name),
+          content: componentUXGuidelines,
           type: 'markdown'
         }]
+      };
+
+      const activeTabIndex = parseInt(queryString.parse(window.location.hash).tab) || 0;
+
+      const panelProps = {
+        type: 'floating' as 'floating',
+        style: { border: 'none' },
+        className: cx('component-tabs', { 'live-examples': activeTabIndex === 0, guidelines: activeTabIndex === 1 }),
+        tabs: {
+          headers: componentUXGuidelines ? [ 'Live Examples', 'Design Guidelines' ] : [ 'Live Examples' ],
+          onSetActiveTab: this.onSetActiveTab,
+          activeIndex: activeTabIndex
+        }
       };
 
       const children = activeTabIndex === 0 ?
