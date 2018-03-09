@@ -14,7 +14,7 @@ import * as brc from 'buildo-react-components/src';
 import { TabbedPanel } from 'buildo-react-components/src/Panel';
 import { getBackgroundUrl } from 'buildo-react-components/src/Image';
 import Welcome from './Welcome';
-import FlexView from 'react-flexview';
+import FlexView from 'react-flexview/src';
 import { InputChildren } from 'react-input-children/src/InputChildren';
 
 declare const global: any;

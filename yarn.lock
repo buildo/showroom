@@ -5629,9 +5629,21 @@ react-dom@^16:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-flexview@3.0.1, react-flexview@^3.0.1:
+react-flexview@3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/react-flexview/-/react-flexview-3.0.1.tgz#63c2f9c17a016dbe84c83bc00f27b94d3b859068"
+  dependencies:
+    classnames "^2.2.5"
+    lodash.omit "^4.5.0"
+    lodash.pick "^4.4.0"
+    lodash.some "^4.6.0"
+    prop-types "^15.5.6"
+    sass-flex-mixins "^0.1.0"
+    typelevel-ts "^0.2.2"
+
+react-flexview@buildo/react-flexview:
+  version "3.0.1"
+  resolved "https://codeload.github.com/buildo/react-flexview/tar.gz/b701a199ceeafa93b291b23554b5cc94b32f1b83"
   dependencies:
     classnames "^2.2.5"
     lodash.omit "^4.5.0"

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import FlexView from 'react-flexview';
+import FlexView from 'react-flexview/src';
 
 import './buildo-logo.png';
 

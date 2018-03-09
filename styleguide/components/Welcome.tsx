@@ -1,5 +1,5 @@
 import * as React from 'react';
-import FlexView from 'react-flexview';
+import FlexView from 'react-flexview/src';
 import Button from 'buildo-react-components/src/Button';
 
 import './rocket.png';

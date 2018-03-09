@@ -6,7 +6,7 @@
   "scripts": {
     "start": "styleguidist server",
     "build": "styleguidist build",
-    "update-components": "yarn add buildo/react-components buildo/react-autosize-textarea buildo/react-cookie-banner buildo/react-input-children",
+    "update-components": "yarn add buildo/react-components buildo/react-autosize-textarea buildo/react-cookie-banner buildo/react-input-children buildo/react-flexview",
     "gh-pages": "gh-pages -d dist",
     "deploy": "yarn update-components && yarn build && git add docs yarn.lock && git commit -m 'update gh-pages' && git push",
     "typecheck": "tsc --noEmit --pretty"
@@ -44,7 +44,7 @@
     "query-string": "^5.1.0",
     "react-autosize-textarea": "buildo/react-autosize-textarea",
     "react-cookie-banner": "buildo/react-cookie-banner",
-    "react-flexview": "^3.0.1",
+    "react-flexview": "buildo/react-flexview",
     "react-input-children": "buildo/react-input-children"
   }
 }
