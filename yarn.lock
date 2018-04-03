@@ -5543,7 +5543,7 @@ react-addons-shallow-compare@15.6.0:
 
 react-autosize-textarea@buildo/react-autosize-textarea:
   version "3.0.2"
-  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/0ecacff41850d03b955cd78ea696fdf2e23126c2"
+  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/e4c302df1f18c93de29d6e31b6018ecb00269847"
   dependencies:
     autosize "^4.0.0"
     line-height "^0.3.1"
