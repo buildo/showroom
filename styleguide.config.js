@@ -32,6 +32,10 @@ module.exports = {
     StyleGuide: path.join(__dirname, 'styleguide/components/StyleGuide.tsx')
   },
 
+  compilerConfig: {
+    transforms: { dangerousTaggedTemplateString: true }
+  },
+
   // content
   title: '@buildo/react-components',
   template: 'styleguide/index.html',
