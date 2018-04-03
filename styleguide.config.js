@@ -33,6 +33,7 @@ module.exports = {
   },
 
   compilerConfig: {
+    objectAssign: 'Object.assign',
     transforms: { dangerousTaggedTemplateString: true }
   },
 
