@@ -1301,8 +1301,8 @@ buildo-normalize-css@^3.0.2:
     normalize.css "^6.0.0"
 
 buildo-react-components@buildo/react-components:
-  version "0.33.0"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/f0d21e5ad23a8e5f8d8c094769b70f1d339b53e2"
+  version "0.34.0"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/84534e02d718432f4097545998509ee1b20b4fb0"
   dependencies:
     bowser "1.7.3"
     classnames "2.2.5"
@@ -5543,7 +5543,7 @@ react-addons-shallow-compare@15.6.0:
 
 react-autosize-textarea@buildo/react-autosize-textarea:
   version "3.0.2"
-  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/1205eab85a9ce1855e43b65dd859e5f23191fe28"
+  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/0ecacff41850d03b955cd78ea696fdf2e23126c2"
   dependencies:
     autosize "^4.0.0"
     line-height "^0.3.1"
