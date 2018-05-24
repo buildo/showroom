@@ -18,14 +18,12 @@
     "typings",
     "./styleguide/**/*",
     "node_modules/buildo-react-components/**/*",
-    "node_modules/react-input-children/**/*",
     "node_modules/react-autosize-textarea/**/*",
     "node_modules/react-cookie-banner/**/*",
     "node_modules/react-flexview/**/*"
   ],
   "exclude": [
     "node_modules/buildo-react-components/test/**/*",
-    "node_modules/react-input-children/test/**/*",
     "node_modules/react-autosize-textarea/test/**/*",
     "node_modules/react-cookie-banner/test/**/*",
     "node_modules/react-flexview/test/**/*"

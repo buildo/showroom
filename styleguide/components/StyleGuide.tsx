@@ -15,7 +15,6 @@ import { TabbedPanel } from 'buildo-react-components/src/Panel';
 import { getBackgroundUrl } from 'buildo-react-components/src/Image';
 import Welcome from './Welcome';
 import FlexView from 'react-flexview/src';
-import { InputChildren } from 'react-input-children/src/InputChildren';
 
 declare const global: any;
 
@@ -104,7 +103,6 @@ export default class StyleGuide extends Component<Props> {
     });
     global.getBackgroundUrl = getBackgroundUrl;
     global.FlexView = FlexView;
-    global.InputChildren = InputChildren;
   }
 
   findSection(sections: any, slug: string): WrapperSection | ComponentSection {
@@ -124,7 +122,6 @@ export default class StyleGuide extends Component<Props> {
   getUXGuidelines(componentName: string): string | null {
     switch (componentName) {
       case 'TextareaAutosize': return require(`raw-loader!react-autosize-textarea/src/README.md`)
-      case 'InputChildren': return require(`raw-loader!react-input-children/src/README.md`)
       case 'CookieBanner': return require(`raw-loader!react-cookie-banner/src/README.md`)
       case 'FlexView': return require(`raw-loader!react-flexview/src/README.md`)
       default:

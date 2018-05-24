@@ -15,7 +15,6 @@ module.exports = {
         include: [
           path.resolve(__dirname, 'node_modules/buildo-react-components'),
           path.resolve(__dirname, 'node_modules/react-autosize-textarea'),
-          path.resolve(__dirname, 'node_modules/react-input-children'),
           path.resolve(__dirname, 'node_modules/react-cookie-banner'),
           path.resolve(__dirname, 'node_modules/react-flexview'),
           path.resolve(__dirname, 'styleguide')

@@ -50,7 +50,6 @@ module.exports = {
       name: 'Components',
       components: () => brcComponents.concat([
         path.resolve(__dirname, 'node_modules/react-autosize-textarea/src/TextareaAutosize'),
-        path.resolve(__dirname, 'node_modules/react-input-children/src/InputChildren'),
         path.resolve(__dirname, 'node_modules/react-cookie-banner/src/CookieBanner'),
         path.resolve(__dirname, 'node_modules/react-flexview/src/FlexView')
       ]).sort((a, b) => a.split('/').slice(-1)[0].toLowerCase() > b.split('/').slice(-1)[0].toLowerCase() ? 1 : -1)
@@ -63,7 +62,6 @@ module.exports = {
 
     switch (name) {
       case 'TextareaAutosize':
-      case 'InputChildren':
       case 'CookieBanner': return `import ${name} from react-${kebabCase(name)}`;
       case 'FlexView': return `import FlexView from 'react-flexview'`;
       default: return `import ${name} from buildo-react-components/lib/${name}`;
