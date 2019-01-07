@@ -1,6 +1,4 @@
 const path = require('path');
-const kebabCase = require('lodash/kebabCase');
-const endsWith = require('lodash/endsWith');
 const fs = require('fs');
 
 function brc(name) {
@@ -61,8 +59,8 @@ module.exports = {
     const name = path.basename(componentPath, '.tsx');
 
     switch (name) {
-      case 'TextareaAutosize':
-      case 'CookieBanner': return `import ${name} from react-${kebabCase(name)}`;
+      case 'TextareaAutosize': return `import TextareaAutosize from react-autosize-textarea`;
+      case 'CookieBanner': return `import CookieBanner from react-cookie-banner`;
       case 'FlexView': return `import FlexView from 'react-flexview'`;
       default: return `import ${name} from buildo-react-components/lib/${name}`;
     }
