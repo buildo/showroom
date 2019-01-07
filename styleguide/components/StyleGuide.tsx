@@ -165,7 +165,7 @@ export default class StyleGuide extends Component<Props> {
       };
 
       const children = activeTabIndex === 0 ?
-        <ReactComponent component={component} root depth={1} key={String(Math.random())} /> : // changing "key" is needed to force a re-render
+        <ReactComponent component={component} root depth={1} key={String(Math.random())} usageMode='collapse' exampleMode='expand' /> : // changing "key" is needed to force a re-render
         <Sections sections={[UXGuidelines]} root depth={0} /> ;
 
       return (

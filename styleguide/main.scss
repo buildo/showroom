@@ -15,7 +15,7 @@ body {
   }
 }
 
-#app > div {
+#rsg-root > div {
   overflow: hidden;
   padding-left: 240px;
 }
@@ -73,7 +73,7 @@ h1.component-title {
 }
 
 // SIDEBAR
-#app div[class^="rsg--sidebar"] {
+#rsg-root div[class^="rsg--sidebar"] {
   width: 240px;
   background: #f0f3f8;
 
@@ -132,7 +132,7 @@ h1.component-title {
 }
 
 // MARKDOWN CONTENT
-#app {
+#rsg-root {
   main {
     margin: 0;
     padding: 40px 60px;

@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs');
 
 function brc(name) {
-  return path.resolve(__dirname, `node_modules/buildo-react-components/src/${name}/${name}`);
+  return path.resolve(__dirname, `node_modules/buildo-react-components/src/${name}/${name}.tsx`);
 }
 
 const brcComponents = fs.readdirSync(path.resolve(__dirname, 'node_modules/buildo-react-components/src'))
@@ -37,7 +37,17 @@ module.exports = {
 
   // content
   title: '@buildo/react-components',
-  template: 'styleguide/index.html',
+  template: {
+    head: {
+      raw: `
+      <meta charset="utf-8">
+      <title>@buildo/react-components</title>
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://i.icomoon.io/public/5ba04e2a5e/Showroom/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      `
+    }
+  },
   propsParser: require('react-docgen-typescript').parse, // detect docs using TS information
   sections: [
     {
@@ -46,15 +56,13 @@ module.exports = {
     },
     {
       name: 'Components',
-      components: () => brcComponents.concat([
-        path.resolve(__dirname, 'node_modules/react-autosize-textarea/src/TextareaAutosize'),
-        path.resolve(__dirname, 'node_modules/react-cookie-banner/src/CookieBanner'),
-        path.resolve(__dirname, 'node_modules/react-flexview/src/FlexView')
-      ]).sort((a, b) => a.split('/').slice(-1)[0].toLowerCase() > b.split('/').slice(-1)[0].toLowerCase() ? 1 : -1)
+      components: brcComponents.concat([
+        path.resolve(__dirname, 'node_modules/react-autosize-textarea/src/TextareaAutosize.tsx'),
+        path.resolve(__dirname, 'node_modules/react-cookie-banner/src/CookieBanner.tsx'),
+        path.resolve(__dirname, 'node_modules/react-flexview/src/FlexView.tsx')
+      ]).sort((a, b) => a.split('/').slice(-1)[0].toLowerCase() > b.split('/').slice(-1)[0].toLowerCase() ? 1 : -1),
     }
   ],
-  showCode: true,
-  showUsage: false, // show props by default
   getComponentPathLine(componentPath) {
     const name = path.basename(componentPath, '.tsx');
 
