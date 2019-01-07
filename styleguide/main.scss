@@ -46,18 +46,23 @@ h1.component-title {
     padding-top: 30px;
   }
 
-  > .panel-header .tabbed-panel-tabs {
-    background: white;
-    border-bottom: 1px solid #ced0da;
+  > .panel-header {
+    min-height: 70px !important;
 
-    .tabbed-panel-tab {
-      flex: 0 0 auto !important;
-      padding: 0 20px;
-      border-bottom: none;
+    .tabbed-panel-tabs {
+      background: white;
+      border-bottom: 1px solid #ced0da;
 
-      &.active {
-        box-shadow: 0px -3px 0px 0px #1a91eb inset;
-        font-weight: 600;
+      .tabbed-panel-tab {
+        flex: 0 0 auto !important;
+        padding: 0 20px;
+        border-bottom: none;
+        height: 69px;
+
+        &.active {
+          box-shadow: 0px -3px 0px 0px #1a91eb inset;
+          font-weight: 600;
+        }
       }
     }
   }
@@ -77,7 +82,7 @@ h1.component-title {
   width: 240px;
   background: #f0f3f8;
 
-  div[class^="rsg--root"], li[class^="rsg--item"] {
+  nav, li[class^="rsg--item"] {
     font-family: "Source Sans Pro", sans-serif;
     margin: 0;
   }
@@ -86,15 +91,15 @@ h1.component-title {
     padding: 0;
   }
 
-  div[class^="rsg--root"] > ul > li > ul > li > a {
+  nav > ul > li > ul > li > a {
     padding-left: 36px;
   }
 
-  div[class^="rsg--root"] > ul > li > ul > li:last-child {
+  nav > ul > li > ul > li:last-child {
     padding-bottom: 26px;
   }
 
-  div[class^="rsg--root"] > ul > li > a {
+  nav > ul > li > a {
     // font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.5px;
@@ -138,6 +143,10 @@ h1.component-title {
     padding: 40px 60px;
     max-width: none;
     min-width: 800px;
+
+    h1 {
+      line-height: unset;
+    }
   }
 
   .guidelines {
@@ -170,6 +179,7 @@ h1.component-title {
 
     h1, h2, h3, h4 {
       font-family: "Source Sans Pro", sans-serif;
+      line-height: 1.5;
     }
 
     h1 {
