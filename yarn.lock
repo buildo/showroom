@@ -1259,7 +1259,7 @@ buildo-normalize-css@^3.0.2:
 
 buildo-react-components@buildo/react-components:
   version "0.38.3"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/efe72dbb763b79739d78f241a3716b77a292a6dc"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/2ea7b6dbaf365a24b25c2595bf1697297bba6167"
   dependencies:
     bowser "1.7.3"
     classnames "2.2.5"
@@ -1275,7 +1275,7 @@ buildo-react-components@buildo/react-components:
     react-dates "12.5.1"
     react-dnd "2.4.0"
     react-dnd-html5-backend "2.4.1"
-    react-flexview "3.0.2"
+    react-flexview "4.0.1"
     react-input-children "4.0.1"
     react-select "1.0.1"
     react-transition-group "1.2.0"
@@ -1283,7 +1283,6 @@ buildo-react-components@buildo/react-components:
     tcomb "3.2.22"
     tcomb-react "0.9.3"
     tlds "1.194.0"
-    typelevel-ts "0.2.3"
 
 builtin-modules@^1.0.0:
   version "1.1.1"
@@ -5490,8 +5489,8 @@ react-addons-shallow-compare@15.6.0:
     object-assign "^4.1.0"
 
 react-autosize-textarea@buildo/react-autosize-textarea:
-  version "4.0.0"
-  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/40916170c235fb588fd566756a1f14647f11c49c"
+  version "5.0.0"
+  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/c38ee1caad11b104a83a638e51149c45f95b71a4"
   dependencies:
     autosize "^4.0.0"
     line-height "^0.3.1"
@@ -5616,6 +5615,15 @@ react-flexview@3.0.2:
     prop-types "^15.5.6"
     sass-flex-mixins "^0.1.0"
     typelevel-ts "^0.2.2"
+
+react-flexview@4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/react-flexview/-/react-flexview-4.0.1.tgz#25df1e8ff0eb7f2ed7655086ab756faf66bd1f9e"
+  dependencies:
+    lodash.omit "^4.5.0"
+    lodash.pick "^4.4.0"
+    lodash.some "^4.6.0"
+    prop-types "^15.5.6"
 
 react-flexview@buildo/react-flexview:
   version "4.0.1"
