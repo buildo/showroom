@@ -5936,12 +5936,9 @@ react-flexview@4.0.1:
     prop-types "^15.5.6"
 
 react-flexview@buildo/react-flexview:
-  version "4.0.2"
-  resolved "https://codeload.github.com/buildo/react-flexview/tar.gz/53db005d253ef3dc8f30d5f2382c9b0b95972f29"
+  version "4.0.3"
+  resolved "https://codeload.github.com/buildo/react-flexview/tar.gz/4bf03d24217705a0994f5884be2aba7a0799f4a7"
   dependencies:
-    lodash.omit "^4.5.0"
-    lodash.pick "^4.4.0"
-    lodash.some "^4.6.0"
     prop-types "^15.5.6"
 
 react-group@^1.0.6:
