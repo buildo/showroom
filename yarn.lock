@@ -1531,7 +1531,7 @@ buildo-normalize-css@^3.0.2:
 
 buildo-react-components@buildo/react-components:
   version "0.42.6"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/2a25191caaca274b4d1f3d7eb0f660c8203eab0f"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/50e3b0418db9dd2f69f3512d7305b9a53c55035f"
   dependencies:
     bowser "1.7.3"
     classnames "2.2.5"
