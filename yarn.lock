@@ -6197,7 +6197,7 @@ react-flexview@4.0.1:
 
 react-flexview@buildo/react-flexview:
   version "4.0.3"
-  resolved "https://codeload.github.com/buildo/react-flexview/tar.gz/4bf03d24217705a0994f5884be2aba7a0799f4a7"
+  resolved "https://codeload.github.com/buildo/react-flexview/tar.gz/fcaa653dd9d0db0d9339de3466f67e25e3249d0e"
   dependencies:
     prop-types "^15.5.6"
 
