@@ -1535,8 +1535,8 @@ buildo-normalize-css@^3.0.2:
     normalize.css "^6.0.0"
 
 buildo-react-components@buildo/react-components:
-  version "0.44.0"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/42d57492959db1fc8f44a5443e610893e73d7fcd"
+  version "0.44.1"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/dd286827a5756a50b7a147733c73377ff57915b7"
   dependencies:
     bowser "1.7.3"
     classnames "2.2.5"
@@ -6057,7 +6057,7 @@ react-autosize-textarea@5.0.0:
 
 react-autosize-textarea@buildo/react-autosize-textarea:
   version "7.0.0"
-  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/0394fd1ee400c3eebd5361695d4cb0363eee9c52"
+  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/80e3088f88f6b9170855d213abf418e873540e94"
   dependencies:
     autosize "^4.0.2"
     line-height "^0.3.1"
@@ -6070,7 +6070,7 @@ react-codemirror2@^5.1.0:
 
 react-cookie-banner@buildo/react-cookie-banner:
   version "4.0.0"
-  resolved "https://codeload.github.com/buildo/react-cookie-banner/tar.gz/e77ce2b92b219d0d0f4119a10b8429cc0714f568"
+  resolved "https://codeload.github.com/buildo/react-cookie-banner/tar.gz/033e6c6853c75d59ed43e5d5d6eda54f02315bf2"
   dependencies:
     classnames "2.2.5"
     lodash.omit "^4.5.0"
