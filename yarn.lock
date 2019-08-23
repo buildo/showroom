@@ -1584,8 +1584,8 @@ buildo-normalize-css@^3.0.2:
     normalize.css "^6.0.0"
 
 buildo-react-components@buildo/react-components:
-  version "0.44.1"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/87fcf1e6a60167813c61d9b5ec1e450658a3e3f5"
+  version "0.45.0"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/e8bd44e1e4859171294960e0f4d7f773cb684dee"
   dependencies:
     bowser "1.7.3"
     classnames "2.2.5"
@@ -2089,10 +2089,6 @@ console-browserify@^1.1.0:
 console-control-strings@^1.0.0, console-control-strings@~1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/console-control-strings/-/console-control-strings-1.1.0.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
-
-consolidated-events@^1.1.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/consolidated-events/-/consolidated-events-1.1.1.tgz#25395465b35e531395418b7bbecb5ecaf198d179"
 
 "consolidated-events@^1.1.1 || ^2.0.0":
   version "2.0.2"
@@ -6260,21 +6256,6 @@ react-cookie@^2.1.2:
     prop-types "^15.0.0"
     universal-cookie "^2.1.2"
 
-react-dates@12.5.1:
-  version "12.5.1"
-  resolved "https://registry.yarnpkg.com/react-dates/-/react-dates-12.5.1.tgz#8902776d70c1b9591a32322b5ad02b1445580adc"
-  dependencies:
-    airbnb-prop-types "^2.8.1"
-    classnames "^2.2.5"
-    consolidated-events "^1.1.0"
-    is-touch-device "^1.0.1"
-    lodash "^4.1.1"
-    object.assign "^4.0.4"
-    object.values "^1.0.4"
-    prop-types "^15.5.10"
-    react-moment-proptypes "^1.5.0"
-    react-portal "^3.1.0"
-
 react-dates@20.2.5:
   version "20.2.5"
   resolved "https://registry.yarnpkg.com/react-dates/-/react-dates-20.2.5.tgz#e354f009f18e8bb79c19da3be265224f5727fe1e"
@@ -6437,12 +6418,6 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-moment-proptypes@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/react-moment-proptypes/-/react-moment-proptypes-1.5.0.tgz#4a448cd6479efc5dd509283f361f3753c3abe60e"
-  dependencies:
-    moment ">=1.6.0"
-
 react-moment-proptypes@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/react-moment-proptypes/-/react-moment-proptypes-1.6.0.tgz#8ec266ee392a08ba3412d2df2eebf833ab1046df"
@@ -6460,12 +6435,6 @@ react-outside-click-handler@^1.2.0:
     document.contains "^1.0.1"
     object.values "^1.1.0"
     prop-types "^15.7.2"
-
-react-portal@^3.1.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/react-portal/-/react-portal-3.2.0.tgz#4224e19b2b05d5cbe730a7ba0e34ec7585de0043"
-  dependencies:
-    prop-types "^15.5.8"
 
 react-portal@^4.1.5:
   version "4.2.0"
