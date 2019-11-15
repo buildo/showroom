@@ -1600,7 +1600,7 @@ buildo-normalize-css@^3.0.2:
 
 buildo-react-components@buildo/react-components:
   version "0.46.3"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/91fb2f83133e253b5e4d7efc83e97456e216975b"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/71659a1a83b0434e301b8aac09b7f7b9098798c0"
   dependencies:
     bowser "1.7.3"
     classnames "2.2.5"
@@ -2248,14 +2248,6 @@ create-react-class@15.6.3:
   version "15.6.3"
   resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.3.tgz#2d73237fb3f970ae6ebe011a9e66f46dbca80036"
   integrity sha512-M+/3Q6E6DLO6Yx3OwrWjwHBnvfXXYA7W+dFjt/ZDBemHO1DDZhsalX/NUtnTYclN6GfnBDRh4qRHjcDHmlJBJg==
-  dependencies:
-    fbjs "^0.8.9"
-    loose-envify "^1.3.1"
-    object-assign "^4.1.1"
-
-create-react-class@^15.5.2:
-  version "15.6.2"
-  resolved "https://registry.yarnpkg.com/create-react-class/-/create-react-class-15.6.2.tgz#cf1ed15f12aad7f14ef5f2dfe05e6c42f91ef02a"
   dependencies:
     fbjs "^0.8.9"
     loose-envify "^1.3.1"
@@ -3208,13 +3200,6 @@ findup@^0.1.5:
   dependencies:
     colors "~0.6.0-1"
     commander "~2.1.0"
-
-fixed-data-table-2@0.7.17:
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/fixed-data-table-2/-/fixed-data-table-2-0.7.17.tgz#327d172f865f71715c86d4979fdbf3c77ecf7d9a"
-  dependencies:
-    create-react-class "^15.5.2"
-    prop-types "^15.5.8"
 
 fixed-data-table-2@0.8.28:
   version "0.8.28"
