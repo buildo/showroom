@@ -6280,8 +6280,8 @@ react-codemirror2@^5.1.0:
   integrity sha512-Cksbgbviuf2mJfMyrKmcu7ycK6zX/ukuQO8dvRZdFWqATf5joalhjFc6etnBdGCcPA2LbhIwz+OPnQxLN/j1Fw==
 
 react-cookie-banner@buildo/react-cookie-banner:
-  version "4.0.0"
-  resolved "https://codeload.github.com/buildo/react-cookie-banner/tar.gz/087ceb5fffbfe732b7b73a5170ca89bab3efb540"
+  version "4.1.0"
+  resolved "https://codeload.github.com/buildo/react-cookie-banner/tar.gz/79eb5aca6629224a2705451070b4b9c77fedb784"
   dependencies:
     classnames "2.2.5"
     lodash.omit "^4.5.0"
