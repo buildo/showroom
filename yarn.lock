@@ -6281,7 +6281,7 @@ react-codemirror2@^5.1.0:
 
 react-cookie-banner@buildo/react-cookie-banner:
   version "4.0.0"
-  resolved "https://codeload.github.com/buildo/react-cookie-banner/tar.gz/52bbd23b10ecf3c476edb575950b607edb51cca9"
+  resolved "https://codeload.github.com/buildo/react-cookie-banner/tar.gz/087ceb5fffbfe732b7b73a5170ca89bab3efb540"
   dependencies:
     classnames "2.2.5"
     lodash.omit "^4.5.0"
