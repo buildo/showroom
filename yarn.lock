@@ -1600,7 +1600,7 @@ buildo-normalize-css@^3.0.2:
 
 buildo-react-components@buildo/react-components:
   version "0.47.1"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/8772870b57ae5281db9da0160fa86ee77b7fae9b"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/971fb0230c6d77c4a0270544b06f9849637d7bf3"
   dependencies:
     bowser "1.7.3"
     classnames "2.2.5"
@@ -1623,8 +1623,6 @@ buildo-react-components@buildo/react-components:
     react-select "2.4.1"
     react-transition-group "1.2.0"
     sass-flex-mixins "0.1.0"
-    tcomb "3.2.22"
-    tcomb-react "0.9.3"
     tlds "1.194.0"
 
 builtin-modules@^1.0.0:
