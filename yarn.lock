@@ -1600,7 +1600,7 @@ buildo-normalize-css@^3.0.2:
 
 buildo-react-components@buildo/react-components:
   version "0.47.2"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/3553c18a5c3411acd2c7beaf17b7c5e5e05a3923"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/31defaa0a46b91e008e05633c0f329d9170d1611"
   dependencies:
     bowser "1.7.3"
     classnames "2.2.5"
@@ -6418,12 +6418,6 @@ react-input-autosize@^2.2.1:
   resolved "https://registry.yarnpkg.com/react-input-autosize/-/react-input-autosize-2.2.1.tgz#ec428fa15b1592994fb5f9aa15bb1eb6baf420f8"
   dependencies:
     prop-types "^15.5.8"
-
-react-input-children@4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/react-input-children/-/react-input-children-4.0.1.tgz#422e69b23dcab568a37a1c2b289ceb4c341b51ce"
-  dependencies:
-    prop-types "^15.6.0"
 
 react-input-children@4.0.2:
   version "4.0.2"
