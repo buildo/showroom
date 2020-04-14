@@ -1419,6 +1419,11 @@ bowser@1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.7.3.tgz#504bdb43118ca8db9cbbadf28fd60f265af96e4f"
 
+bowser@^1.7.3:
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.9.4.tgz#890c58a2813a9d3243704334fa81b96a5c150c9a"
+  integrity sha512-9IdMmj2KjigRq6oWhmwv1W36pDuA4STQZ8q6YO9um+x07xgYNCD3Oou+WP/3L1HNz7iqythGet3/p4wvc8AAwQ==
+
 brace-expansion@^1.0.0:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
@@ -1600,30 +1605,30 @@ buildo-normalize-css@^3.0.2:
 
 buildo-react-components@buildo/react-components:
   version "0.48.0"
-  resolved "https://codeload.github.com/buildo/react-components/tar.gz/2709a9ed734da89cc33159135e88f4bb88864c59"
+  resolved "https://codeload.github.com/buildo/react-components/tar.gz/b3d0be1424ea03483463c482fc773c5ce0ce8ae9"
   dependencies:
-    bowser "1.7.3"
-    classnames "2.2.5"
-    css-element-queries "0.3.2"
-    fixed-data-table-2 "0.8.28"
-    gemini-scrollbar "1.5.2"
-    linkify-it "2.0.3"
-    local-date "2.0.6"
-    lodash "4.17.13"
-    mobile-detect "1.3.6"
-    moment "2.18.1"
-    prop-types "15.6.0"
-    react-addons-shallow-compare "15.6.0"
-    react-autosize-textarea "5.0.0"
-    react-dates "20.2.5"
-    react-dnd "2.4.0"
-    react-dnd-html5-backend "2.4.1"
-    react-flexview "4.0.4"
-    react-input-children "4.0.2"
-    react-select "2.4.1"
-    react-transition-group "1.2.0"
-    sass-flex-mixins "0.1.0"
-    tlds "1.194.0"
+    bowser "^1.7.3"
+    classnames "^2.2.5"
+    css-element-queries "^0.3.2"
+    fixed-data-table-2 "^0.8.28"
+    gemini-scrollbar "^1.5.2"
+    linkify-it "^2.0.3"
+    local-date "^2.0.6"
+    lodash "^4.17.13"
+    mobile-detect "^1.3.6"
+    moment "^2.18.1"
+    prop-types "^15.6.0"
+    react-addons-shallow-compare "^15.6.0"
+    react-autosize-textarea "^5.0.0"
+    react-dates "^20.2.5"
+    react-dnd "^2.4.0"
+    react-dnd-html5-backend "^2.4.1"
+    react-flexview "^4.0.4"
+    react-input-children "^4.0.3"
+    react-select "^2.4.1"
+    react-transition-group "^1.2.0"
+    sass-flex-mixins "^0.1.0"
+    tlds "^1.194.0"
 
 builtin-modules@^1.0.0:
   version "1.1.1"
@@ -2296,7 +2301,7 @@ css-color-names@0.0.4:
   version "0.0.4"
   resolved "https://registry.yarnpkg.com/css-color-names/-/css-color-names-0.0.4.tgz#808adc2e79cf84738069b646cb20ec27beb629e0"
 
-css-element-queries@0.3.2:
+css-element-queries@0.3.2, css-element-queries@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/css-element-queries/-/css-element-queries-0.3.2.tgz#535d80891b3af21395d005f19905fe5154b5ccff"
 
@@ -2613,6 +2618,16 @@ disposables@^1.0.1:
 dnd-core@^2.4.0:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-2.5.4.tgz#0c70a8dcbb609c0b222e275fcae9fa83e5897397"
+  dependencies:
+    asap "^2.0.6"
+    invariant "^2.0.0"
+    lodash "^4.2.0"
+    redux "^3.7.1"
+
+dnd-core@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/dnd-core/-/dnd-core-2.6.0.tgz#12bad66d58742c6e5f7cf2943fb6859440f809c4"
+  integrity sha1-ErrWbVh0LG5ffPKUP7aFlED4CcQ=
   dependencies:
     asap "^2.0.6"
     invariant "^2.0.0"
@@ -3188,7 +3203,7 @@ findup@^0.1.5:
     colors "~0.6.0-1"
     commander "~2.1.0"
 
-fixed-data-table-2@0.8.28:
+fixed-data-table-2@0.8.28, fixed-data-table-2@^0.8.28:
   version "0.8.28"
   resolved "https://registry.yarnpkg.com/fixed-data-table-2/-/fixed-data-table-2-0.8.28.tgz#f60883b5af81b71f6ec8e0ebf6d07b1e3fc3f40a"
   integrity sha512-Y0aY6sck5yp2YXsmKGBisqSCRbzprRi1ui+T3V+uiY09BQMbE/EqWnbJad3U0fJucoHD8QMx7wETs44sL80/kw==
@@ -3389,6 +3404,11 @@ gaze@^1.0.0:
 gemini-scrollbar@1.5.2:
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/gemini-scrollbar/-/gemini-scrollbar-1.5.2.tgz#06528e49afe155c45ce9f7c9ee754a9e6f4ed341"
+
+gemini-scrollbar@^1.5.2:
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/gemini-scrollbar/-/gemini-scrollbar-1.5.3.tgz#7abc916e103e11f983f15856ef8c583cedef95cf"
+  integrity sha512-3Q4SrxkJ+ei+I5PlcRZCfPePv3EduP7xusOWp7Uw0+XywEWred7Nq9hoaP2IQh1vRjoidaVODV3rO3icFH/e5A==
 
 get-caller-file@^1.0.1:
   version "1.0.2"
@@ -3708,7 +3728,7 @@ hoist-non-react-statics@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
-hoist-non-react-statics@^2.3.1:
+hoist-non-react-statics@^2.1.0, hoist-non-react-statics@^2.3.1:
   version "2.5.5"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.5.tgz#c5903cf409c0dfd908f388e619d86b9c1174cb47"
   integrity sha512-rqcy4pJo55FTTLWt+bU8ukscqHeE/e9KWvsOW2b/a3afxQZhwkQdT1rPPCJ0rYXdj4vNcasY8zHTH+jF/qStxw==
@@ -4514,6 +4534,13 @@ linkify-it@2.0.3:
   dependencies:
     uc.micro "^1.0.1"
 
+linkify-it@^2.0.3:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/linkify-it/-/linkify-it-2.2.0.tgz#e3b54697e78bf915c70a38acd78fd09e0058b1cf"
+  integrity sha512-GnAl/knGn+i1U/wjBz3akz2stz+HrHLsxMwHQGofCDfPvlf+gDKN58UtfmUquTY4/MXeE2x7k19KQmeoZi94Iw==
+  dependencies:
+    uc.micro "^1.0.1"
+
 listify@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/listify/-/listify-1.0.0.tgz#03ca7ba2d150d4267773f74e57558d1053d2bee3"
@@ -4540,7 +4567,7 @@ loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0:
     emojis-list "^2.0.0"
     json5 "^0.5.0"
 
-local-date@2.0.6:
+local-date@2.0.6, local-date@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/local-date/-/local-date-2.0.6.tgz#6be829e6dbecc1ff4c848475f225c7838ed28755"
   integrity sha512-8uTc1Ksa8451cqKSd8tZvTBdemTVz/RbroTBm86q86arWK0/2a8ntenxKtaDZeR6HGnoXG2MN73+q//kvCBeRw==
@@ -4605,6 +4632,11 @@ lodash@4.17.13, lodash@^4.0.0, lodash@^4.1.1, lodash@^4.14.0, lodash@^4.17.10, l
   version "4.17.13"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.13.tgz#0bdc3a6adc873d2f4e0c4bac285df91b64fc7b93"
   integrity sha512-vm3/XWXfWtRua0FkUyEHBZy8kCPjErNBT9fJx8Zvs+U6zjqPbTUOpkaoum3O5uiA8sm+yNMHXfYkTUHFoMxFNA==
+
+lodash@^4.17.13:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
+  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
 
 log-symbols@^2.2.0:
   version "2.2.0"
@@ -4978,6 +5010,11 @@ mobile-detect@1.3.6:
   version "1.3.6"
   resolved "https://registry.yarnpkg.com/mobile-detect/-/mobile-detect-1.3.6.tgz#801f520109810f5090a741ced4914f706e7dfbe8"
 
+mobile-detect@^1.3.6:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/mobile-detect/-/mobile-detect-1.4.4.tgz#686c74e92d3cc06b09a9b3594b7b981494b137f6"
+  integrity sha512-vTgEjKjS89C5yHL5qWPpT6BzKuOVqABp+A3Szpbx34pIy3sngxlGaFpgHhfj6fKze1w0QKeOSDbU7SKu7wDvRQ==
+
 moment@2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
@@ -4985,6 +5022,11 @@ moment@2.18.1:
 moment@>=1.6.0:
   version "2.20.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
+
+moment@^2.18.1:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -6236,12 +6278,29 @@ react-addons-shallow-compare@15.6.0:
     fbjs "^0.8.4"
     object-assign "^4.1.0"
 
+react-addons-shallow-compare@^15.6.0:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react-addons-shallow-compare/-/react-addons-shallow-compare-15.6.2.tgz#198a00b91fc37623db64a28fd17b596ba362702f"
+  integrity sha1-GYoAuR/DdiPbZKKP0XtZa6NicC8=
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
+
 react-autosize-textarea@5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/react-autosize-textarea/-/react-autosize-textarea-5.0.0.tgz#954530d013cdda1731a5bdbef38d47f0b5983731"
   integrity sha512-Yg4Lp9MeoFYUJJopkMGCBk1w8ApebYkhbNO8j+m0C8WsGo5/mQF72XoJZQBW2plW+jnZykI58ZApTrIFqN/juQ==
   dependencies:
     autosize "^4.0.0"
+    line-height "^0.3.1"
+    prop-types "^15.5.6"
+
+react-autosize-textarea@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/react-autosize-textarea/-/react-autosize-textarea-5.0.1.tgz#71bdd13941dc6ff465efee412b41a5ebf6c6fb58"
+  integrity sha512-VHYFObl0XtI4xy2pEMqKDIFCOs1e4JEaDaq2WgwZAZdXrahspnzJAX+Zy4V9eKZIhY+lUKA2MlVZxtqexx/7YA==
+  dependencies:
+    autosize "^4.0.2"
     line-height "^0.3.1"
     prop-types "^15.5.6"
 
@@ -6297,6 +6356,28 @@ react-dates@20.2.5:
     react-with-styles "^3.2.0"
     react-with-styles-interface-css "^4.0.2"
 
+react-dates@^20.2.5:
+  version "20.3.0"
+  resolved "https://registry.yarnpkg.com/react-dates/-/react-dates-20.3.0.tgz#47c1549fa1566e7708d683faf9446a5ebc615a15"
+  integrity sha512-ZTTIOxD+VE5Ptzq8rjlHe3FH5adAhNVn0Wr08aekmkUvBY+1FpUcxU1jOb65jXH0ZmSyaL0ikjBHPL32KxXNtA==
+  dependencies:
+    "@babel/runtime" "^7.4.5"
+    airbnb-prop-types "^2.10.0"
+    consolidated-events "^1.1.1 || ^2.0.0"
+    enzyme-shallow-equal "^1.0.0"
+    is-touch-device "^1.0.1"
+    lodash "^4.1.1"
+    object.assign "^4.1.0"
+    object.values "^1.0.4"
+    prop-types "^15.6.1"
+    raf "^3.4.1"
+    react-moment-proptypes "^1.6.0"
+    react-outside-click-handler "^1.2.0"
+    react-portal "^4.1.5"
+    react-with-direction "^1.3.0"
+    react-with-styles "^3.2.3"
+    react-with-styles-interface-css "^4.0.2"
+
 react-dev-utils@^5.0.1:
   version "5.0.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-5.0.3.tgz#92f97668f03deb09d7fa11ea288832a8c756e35e"
@@ -6327,6 +6408,13 @@ react-dnd-html5-backend@2.4.1:
   dependencies:
     lodash "^4.2.0"
 
+react-dnd-html5-backend@^2.4.1:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/react-dnd-html5-backend/-/react-dnd-html5-backend-2.6.0.tgz#590cd1cca78441bb274edd571fef4c0b16ddcf8e"
+  integrity sha1-WQzRzKeEQbsnTt1XH+9MCxbdz44=
+  dependencies:
+    lodash "^4.2.0"
+
 react-dnd@2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/react-dnd/-/react-dnd-2.4.0.tgz#96f0042cd4cd375b4f0c3413f6ec84d267b7d792"
@@ -6337,6 +6425,18 @@ react-dnd@2.4.0:
     invariant "^2.1.0"
     lodash "^4.2.0"
     prop-types "^15.5.8"
+
+react-dnd@^2.4.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/react-dnd/-/react-dnd-2.6.0.tgz#7fa25676cf827d58a891293e3c1ab59da002545a"
+  integrity sha1-f6JWds+CfViokSk+PBq1naACVFo=
+  dependencies:
+    disposables "^1.0.1"
+    dnd-core "^2.6.0"
+    hoist-non-react-statics "^2.1.0"
+    invariant "^2.1.0"
+    lodash "^4.2.0"
+    prop-types "^15.5.10"
 
 react-docgen-annotation-resolver@^1.0.0:
   version "1.1.0"
@@ -6383,7 +6483,7 @@ react-error-overlay@^4.0.1:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-4.0.1.tgz#417addb0814a90f3a7082eacba7cee588d00da89"
   integrity sha512-xXUbDAZkU08aAkjtUvldqbvI04ogv+a1XdHxvYuHPYKIVk/42BIOD0zSKTHAWV4+gDy3yGm283z2072rA2gdtw==
 
-react-flexview@4.0.4:
+react-flexview@4.0.4, react-flexview@^4.0.4:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/react-flexview/-/react-flexview-4.0.4.tgz#71dd3b7d1385c680720694becc80666260f6d5da"
   integrity sha512-vclPtC4EjNnagEuC3KSXyr8YPtNE0gwxqO8CtJ4IsWe+eVtzetm6d0eNQ2cL+Ws7b/FazlieyoPGBGlBPvuTpw==
@@ -6424,6 +6524,11 @@ react-input-children@4.0.2:
   resolved "https://registry.yarnpkg.com/react-input-children/-/react-input-children-4.0.2.tgz#052a5f716e362d9d5c2e0e505735a9db948e2e70"
   integrity sha512-gGwGzwT8/FhCNjygxyjaNShA42uPfoR9kZ4oc9uw+vzqlgzpfubEpaBU6JrUh5o3I3A/S/Xc/Mb1h2HvZUH3XQ==
 
+react-input-children@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/react-input-children/-/react-input-children-4.0.3.tgz#4be295ace84fcbfbd0f1ee364599b02a30dfe851"
+  integrity sha512-yfjKOvfxD6H+YUyYyty3zR5vtjcDeIZoILh9gpjhNL7W0y/7abiCgy8phvXV3iiQ7BbKQC8o1acbVh6OfOqjYA==
+
 react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
@@ -6463,6 +6568,19 @@ react-select@2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-2.4.1.tgz#99dd9c8b7700b5ebd38007dd707b1abdbad2e70f"
   integrity sha512-je1cVAFsyQrGxkruQnNCuwo3+P0+1dyq7M4/gTlSwhO4ptPeTjf0eNrvCJ9iurVyorrnI88zgx2/yxrr2/oLLQ==
+  dependencies:
+    classnames "^2.2.5"
+    emotion "^9.1.2"
+    memoize-one "^5.0.0"
+    prop-types "^15.6.0"
+    raf "^3.4.0"
+    react-input-autosize "^2.2.1"
+    react-transition-group "^2.2.1"
+
+react-select@^2.4.1:
+  version "2.4.4"
+  resolved "https://registry.yarnpkg.com/react-select/-/react-select-2.4.4.tgz#ba72468ef1060c7d46fbb862b0748f96491f1f73"
+  integrity sha512-C4QPLgy9h42J/KkdrpVxNmkY6p4lb49fsrbDk/hRcZpX7JvZPNb6mGj+c5SzyEtBv1DmQ9oPH4NmhAFvCrg8Jw==
   dependencies:
     classnames "^2.2.5"
     emotion "^9.1.2"
@@ -6547,6 +6665,17 @@ react-transition-group@1.2.0:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
+react-transition-group@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.1.tgz#e11f72b257f921b213229a774df46612346c7ca6"
+  integrity sha512-CWaL3laCmgAFdxdKbhhps+c0HRGF4c+hdM4H23+FI1QBNUyx/AMeIJGWorehPNSaKnQNOAxL7PQmqMu78CDj3Q==
+  dependencies:
+    chain-function "^1.0.0"
+    dom-helpers "^3.2.0"
+    loose-envify "^1.3.1"
+    prop-types "^15.5.6"
+    warning "^3.0.0"
+
 react-transition-group@^2.2.1:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.5.3.tgz#26de363cab19e5c88ae5dbae105c706cf953bb92"
@@ -6579,7 +6708,7 @@ react-with-styles-interface-css@^4.0.2:
     array.prototype.flat "^1.2.1"
     global-cache "^1.2.1"
 
-react-with-styles@^3.2.0:
+react-with-styles@^3.2.0, react-with-styles@^3.2.3:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/react-with-styles/-/react-with-styles-3.2.3.tgz#b058584065bb36c0d80ccc911725492692db8a61"
   integrity sha512-MTI1UOvMHABRLj5M4WpODfwnveHaip6X7QUMI2x6zovinJiBXxzhA9AJP7MZNaKqg1JRFtHPXZdroUC8KcXwlQ==
@@ -7028,7 +7157,7 @@ safe-regex@^1.1.0:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-sass-flex-mixins@0.1.0:
+sass-flex-mixins@0.1.0, sass-flex-mixins@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/sass-flex-mixins/-/sass-flex-mixins-0.1.0.tgz#bd1b8cbd0b080692b57ca258f403a355d553008f"
 
@@ -7727,6 +7856,11 @@ timers-browserify@^2.0.4:
 tlds@1.194.0:
   version "1.194.0"
   resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.194.0.tgz#55bfb34859229e492497580b0040e7be58d171cd"
+
+tlds@^1.194.0:
+  version "1.207.0"
+  resolved "https://registry.yarnpkg.com/tlds/-/tlds-1.207.0.tgz#459264e644cf63ddc0965fece3898913286b1afd"
+  integrity sha512-k7d7Q1LqjtAvhtEOs3yN14EabsNO8ZCoY6RESSJDB9lst3bTx3as/m1UuAeCKzYxiyhR1qq72ZPhpSf+qlqiwg==
 
 tmp@^0.0.33:
   version "0.0.33"
