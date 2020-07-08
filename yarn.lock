@@ -6254,8 +6254,8 @@ react-autosize-textarea@^5.0.0:
     prop-types "^15.5.6"
 
 react-autosize-textarea@buildo/react-autosize-textarea:
-  version "7.0.0"
-  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/a53d12255cbd485e557c45a0c9676838d0df3632"
+  version "7.1.0"
+  resolved "https://codeload.github.com/buildo/react-autosize-textarea/tar.gz/56225f8d8d2f1e5b3163442a0e2bccb2a7530931"
   dependencies:
     autosize "^4.0.2"
     line-height "^0.3.1"
