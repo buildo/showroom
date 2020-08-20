@@ -6401,8 +6401,8 @@ react-flexview@^4.0.4:
     prop-types "^15.5.6"
 
 react-flexview@buildo/react-flexview:
-  version "6.0.0"
-  resolved "https://codeload.github.com/buildo/react-flexview/tar.gz/2d869eda4df8d4883e6c3854a40f9f9894323df6"
+  version "6.0.1"
+  resolved "https://codeload.github.com/buildo/react-flexview/tar.gz/c4933083c555141a3358b86fb0f84e17681a9e96"
   dependencies:
     prop-types "^15.5.6"
 
