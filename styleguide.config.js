@@ -67,10 +67,10 @@ module.exports = {
     const name = path.basename(componentPath, '.tsx');
 
     switch (name) {
-      case 'TextareaAutosize': return `import TextareaAutosize from react-autosize-textarea`;
-      case 'CookieBanner': return `import CookieBanner from react-cookie-banner`;
-      case 'FlexView': return `import FlexView from 'react-flexview'`;
-      default: return `import ${name} from buildo-react-components/lib/${name}`;
+      case 'TextareaAutosize': return `import TextareaAutosize from "react-autosize-textarea"`;
+      case 'CookieBanner': return `import CookieBanner from "react-cookie-banner"`;
+      case 'FlexView': return `import FlexView from "react-flexview"`;
+      default: return `import ${name} from "buildo-react-components/lib/${name}";`;
     }
   },
   getExampleFilename(componentPath) {
