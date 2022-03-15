@@ -41,7 +41,7 @@
     "@types/lodash-es": "^4.17.3",
     "buildo-react-components": "buildo/react-components",
     "faker": "^4.1.0",
-    "lodash-es": "^4.17.14",
+    "lodash-es": "^4.17.21",
     "progress-bar-webpack-plugin": "^1.10.0",
     "query-string": "^5.1.0",
     "react-autosize-textarea": "buildo/react-autosize-textarea",
